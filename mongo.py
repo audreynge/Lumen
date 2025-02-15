@@ -19,5 +19,9 @@ test_data = {
     'line': 'green'
 }
 
-_ = col.insert_one(test_data)
+# _ = col.insert_one(test_data)
+
+cursor = col.find()
+for entry in cursor:
+    print(entry)
 
