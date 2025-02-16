@@ -13,6 +13,7 @@ import pandas as pd
 from shapely.geometry import LineString, Point
 import pickle
 from shapely.ops import nearest_points
+import math
 
 # Step 1: Geocode the addresses
 def geocode_address(address):
@@ -36,10 +37,6 @@ def optimized_path(start, end):
     start_point = geocode_address(start_address)
     end_point = geocode_address(end_address)
 
-    # assign weights to neighborhoods based on shootings
-    df = pd.read_csv('shootings.csv')
-    neighborhood_weights = df['NEIGHBORHOOD'].value_counts().to_dict()
-
     # will pickle on first run, speeding up future runs
     try:
         with open("boston_graph.pickle", "rb") as f:
@@ -51,6 +48,11 @@ def optimized_path(start, end):
 
         # match crs
         gdf_neighborhoods = gdf_neighborhoods.to_crs(epsg=4326)
+
+        # assign weights to neighborhoods based on shootings
+        df = pd.read_csv('shootings.csv')
+        neighborhood_weights = df['NEIGHBORHOOD'].value_counts().to_dict()
+        neighborhood_weights = dict([(k, math.log2(v)) for k, v in neighborhood_weights.items()])
 
         # assign neighborhood weights to edges
         for u, v, data in G.edges(data=True):
@@ -131,7 +133,8 @@ def main():
     start = "1 Science Pk, Boston, MA"
     end = "963 South St, Roslindale, MA"
     _ = optimized_path(start, end)
-    print(_)
+    for stop in _['names']:
+        print(stop)
 
 if __name__ == '__main__':
     main()
