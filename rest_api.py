@@ -1,10 +1,10 @@
 from flask import Flask, request, jsonify
 import pandas as pd
 from scipy import stats
-import subprocess
 import json
 from pymongo import MongoClient
 from bson import json_util
+import math
 
 app = Flask(__name__)
 
@@ -48,3 +48,42 @@ def add_service_issue():
 
     _ = col.insert_one(data)
     return json.loads(json_util.dumps(data))
+
+@app.get('/find')
+def find_nearby_issues():
+    """
+    api args:
+        latitude: latitude
+        longitude: longitude
+        radius: radius to search (in meters)
+    :return:
+        every row where the location matches
+
+    example usage: http://127.0.0.1:5000/find?latitude=40.7128&longitude=-74.0060&radius=1000
+    """
+    client = MongoClient(
+        'mongodb://localhost:27017'
+    )
+
+    db = client['mbta']
+    col = db['service_issues']
+
+    center_latitude = float(request.args.get('latitude'))  # Example: New York City
+    center_longitude = float(request.args.get('longitude'))
+    radius_in_meters = int(request.args.get('radius')) # meters
+
+    # convert radius to radians
+    earth_radius_in_meters = 6371000 # rough estimate
+    radius_in_radians = radius_in_meters / earth_radius_in_meters
+
+    # geospatial query
+    query = {
+        "location": {
+            "$geoWithin": {
+                "$centerSphere": [[center_longitude, center_latitude], radius_in_radians]
+            }
+        }
+    }
+
+    results = col.find(query)
+    return json.loads(json_util.dumps(results))
