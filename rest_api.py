@@ -34,12 +34,15 @@ def add_service_issue():
     db = client['mbta']
     col = db['service_issues']
 
-    print('mongo setup done')
+    location = {
+        "type": "Point",
+        "coordinates": [longitude, latitude]
+    }
 
     data = {
         'category': category,
         'description': description,
-        'latlon': f'{latitude};{longitude}',
+        "location": location,
         'line': line
     }
 

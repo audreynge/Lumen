@@ -10,16 +10,29 @@ client = MongoClient(
 
 db = client['mbta']
 col = db['service_issues']
+col.create_index([("location", "2dsphere")])
+col.drop()
 print(db.list_collection_names())
 
-test_data = {
+latitude = 40.7128  # Example: New York City
+longitude = -74.0060
+
+# Create the GeoJSON Point object
+location = {
+    "type": "Point",
+    "coordinates": [longitude, latitude]
+}
+
+# Create the document to insert
+document = {
     'category': 'outage',
-    'description': 'A dragon wandered onto the train tracks and ate a train',
-    'latlon': '42.5;-71.2',
+    'description': 'WALLAHI I AM FINISHED',
+    "location": location,
     'line': 'green'
 }
 
-# _ = col.insert_one(test_data)
+# Insert the document into the collection
+result = col.insert_one(document)
 
 cursor = col.find()
 for entry in cursor:
