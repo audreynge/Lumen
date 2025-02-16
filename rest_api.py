@@ -6,8 +6,10 @@ from pymongo import MongoClient
 from bson import json_util
 import math
 from optimal_neighborhood_path import optimized_path
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/issue')
 def add_service_issue():

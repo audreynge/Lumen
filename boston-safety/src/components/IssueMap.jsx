@@ -1,119 +1,110 @@
 "use client";
-import React from "react";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
+import { useQuery } from '@tanstack/react-query';
+import L from 'leaflet';
 
-function IssueMapVisual({
-  issues = [],
-  onMarkerClick = () => {},
-  selectedCategories = [],
-  onCategoryToggle = () => {},
-}) {
+function IssueMapVisual({ issue }) {
   const [viewport, setViewport] = useState({
     latitude: 42.3601,
     longitude: -71.0589,
     zoom: 12,
   });
 
-  const categoryColors = {
-    transportation: "#FF4B4B",
-    infrastructure: "#4B83FF",
-    environment: "#4BFF4B",
-    safety: "#FFB74B",
-    other: "#9E9E9E",
+  console.log(issue);
+
+  const fetchNearbyIssues = async () => {
+    if (issue) {
+      try {
+        const response = await fetch(`http://127.0.0.1:5000/find?latitude=${issue.latitude}&longitude=${issue.longitude}&radius=1000`);
+        if (!response.ok) {
+          throw new Error('failed to fetch nearby issues');
+        }
+        console.log(response);
+        return response.json();
+      } 
+      catch (error) {
+        throw new Error(error.message);
+      }
+    }
+    return [];
   };
 
-  const filteredIssues = issues.filter(
-    (issue) =>
-      selectedCategories.length === 0 ||
-      selectedCategories.includes(issue.category)
-  );
+  const { data: nearbyIssues = [], isLoading, isError, error } = useQuery({
+    queryKey: ['nearby-issues', issue?.latitude, issue?.longitude],
+    queryFn: fetchNearbyIssues,
+    enabled: Boolean(issue),
+  });
+
+  if (isLoading) {
+    return (<div>Loading...</div>);
+  }
+
+  if (isError) {
+    return <div>Error: {error.message}</div>;
+  }
 
   return (
-    <div className="relative w-full h-[600px]">
-      <></>
+    <div className="relative w-full h-[600px] pt-4 pb-8">
+      <MapContainer
+        center={[viewport.latitude, viewport.longitude]}
+        zoom={viewport.zoom}
+        style={{ height: "100%", width: "100%", zIndex: 0 }}
+      >
+        <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
 
-      <div className="absolute top-4 right-4 bg-white p-4 rounded-lg shadow-lg">
-        <h3 className="font-roboto text-lg font-bold mb-2">Categories</h3>
-        {Object.entries(categoryColors).map(([category, color]) => (
-          <div key={category} className="flex items-center mb-2">
-            <button
-              onClick={() => onCategoryToggle(category)}
-              className={`flex items-center space-x-2 px-3 py-1 rounded-full transition-colors ${
-                selectedCategories.includes(category)
-                  ? "bg-gray-100"
-                  : "bg-white"
-              }`}
-            >
-              <div
-                className="w-4 h-4 rounded-full"
-                style={{ backgroundColor: color }}
-              />
-              <span className="font-roboto capitalize">{category}</span>
-            </button>
-          </div>
+        {issue && issue.latitude && issue.longitude && (
+          <Marker
+            position={[issue.latitude, issue.longitude]}
+            icon={new L.Icon({
+              iconUrl: "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png",
+              iconSize: [25, 41],
+              iconAnchor: [12, 41],
+              popupAnchor: [1, -34],
+              shadowSize: [41, 41],
+            })}
+          >
+            <Popup>
+              <div>
+                <strong>Category:</strong> {issue.category}<br />
+                <strong>Description:</strong> {issue.description}<br />
+                <strong>Line:</strong> {issue.mbta_line}
+              </div>
+            </Popup>
+          </Marker>
+        )}
+
+        {nearbyIssues && nearbyIssues.map((nearbyIssue, index) => (
+          <Marker
+            key={index}
+            position={[nearbyIssue.location.coordinates[0], nearbyIssue.location.coordinates[1]]}
+            icon={new L.Icon({
+              iconUrl: "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png",
+              iconSize: [25, 41],
+              iconAnchor: [12, 41],
+              popupAnchor: [1, -34],
+              shadowSize: [41, 41],
+            })}
+          >
+            <Popup>
+              <div>
+                <strong>Category:</strong> {nearbyIssue.category}<br />
+                <strong>Description:</strong> {nearbyIssue.description}<br />
+                <strong>Line:</strong> {nearbyIssue.mbta_line}
+              </div>
+            </Popup>
+          </Marker>
         ))}
-      </div>
+      </MapContainer>
     </div>
   );
 }
 
-function IssueMap() {
-  const [selectedCategories, setSelectedCategories] = useState([]);
-  const [selectedIssue, setSelectedIssue] = useState(null);
-
-  const mockIssues = [
-    {
-      id: 1,
-      category: "transportation",
-      location_lat: 42.3601,
-      location_lng: -71.0589,
-      description: "Heavy traffic congestion",
-    },
-    {
-      id: 2,
-      category: "infrastructure",
-      location_lat: 42.3701,
-      location_lng: -71.0689,
-      description: "Broken street light",
-    },
-    {
-      id: 3,
-      category: "environment",
-      location_lat: 42.3501,
-      location_lng: -71.0489,
-      description: "Illegal dumping",
-    },
-  ];
-
-  const handleCategoryToggle = (category) => {
-    setSelectedCategories((prev) =>
-      prev.includes(category)
-        ? prev.filter((c) => c !== category)
-        : [...prev, category]
-    );
-  };
-
-  const handleMarkerClick = (issue) => {
-    setSelectedIssue(issue);
-  };
-
+function IssueMap({ issue }) {
   return (
     <div className="p-4">
-      <IssueMapVisual
-        issues={mockIssues}
-        onMarkerClick={handleMarkerClick}
-        selectedCategories={selectedCategories}
-        onCategoryToggle={handleCategoryToggle}
-      />
-      {selectedIssue && (
-        <div className="mt-4 p-4 bg-white rounded-lg shadow-lg">
-          <h3 className="font-roboto text-xl font-bold mb-2">Selected Issue</h3>
-          <p className="font-roboto">Category: {selectedIssue.category}</p>
-          <p className="font-roboto">
-            Description: {selectedIssue.description}
-          </p>
-        </div>
-      )}
+      <IssueMapVisual issue={issue} />
     </div>
   );
 }

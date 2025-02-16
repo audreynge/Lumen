@@ -6,7 +6,7 @@ function ActiveIssues({ mbtaLines, issues }){
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
         {mbtaLines.map((line) => {
-          const lineIssues = issues.filter((i) => i.mbta_line === line);
+          const lineIssues = issue.filter((i) => i.mbta_line === line);
           return (
             <div key={line} className="bg-white p-6 rounded-lg shadow-lg">
               <h3 className="font-roboto text-xl font-bold mb-4">{line}</h3>
