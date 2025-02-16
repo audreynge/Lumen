@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="font-roboto text-xl font-bold mb-4">BostIn</h3>
+            <h3 className="font-roboto text-xl font-bold mb-4">Lumen</h3>
             <p className="font-roboto text-gray-400">Empowering communities through AI-driven urban solutions</p>
           </div>
           <div>
@@ -32,7 +32,7 @@ const Footer = () => {
         </div>
         <div className="mt-8 pt-8 border-t border-gray-800 text-center">
           <p className="font-roboto text-gray-400">
-            © 2025 BostIn. All rights reserved.
+            © 2025 Lumen. All rights reserved.
           </p>
         </div>
       </div>

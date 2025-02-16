@@ -1,11 +1,10 @@
 "use client";
-
 import React, { useState, useEffect, useRef } from "react";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import "leaflet-routing-machine";
+import { useRouter } from "next/navigation";
 
-// Geocode an address to [lat, lng] using OpenStreetMap’s Nominatim API
 const geocodeAddress = async (address) => {
   const response = await fetch(
     `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(address)}`
@@ -19,17 +18,16 @@ const geocodeAddress = async (address) => {
   }
 };
 
-const RouteForm = ({ onSubmit, onCancel }) => {
-
-  //dummy values
+const RouteForm = ({ onCancel }) => {
+  // dummy addresses
   const [startAddress, setStartAddress] = useState("1 Science Park, Boston, MA");
   const [endAddress, setEndAddress] = useState("963 South St, Roslindale, MA");
-
   const [error, setError] = useState(null);
   const [routeData, setRouteData] = useState(null);
   const mapRef = useRef(null);
   const mapInstance = useRef(null);
   const routeControlRef = useRef(null);
+  const router = useRouter();
 
   useEffect(() => {
     const initializeMap = async () => {
@@ -45,9 +43,8 @@ const RouteForm = ({ onSubmit, onCancel }) => {
       }
     };
     initializeMap();
-  }, []); // runs once
+  }, []);
 
-  // Function to call your backend API that returns the optimized route data
   const fetchPath = async (start, end) => {
     try {
       const url = `http://127.0.0.1:5000/path?start=${encodeURIComponent(
@@ -67,7 +64,6 @@ const RouteForm = ({ onSubmit, onCancel }) => {
     try {
       const data = await fetchPath(startAddress, endAddress);
       setRouteData(data);
-
       if (routeControlRef.current) {
         mapInstance.current.removeControl(routeControlRef.current);
       }
@@ -75,6 +71,7 @@ const RouteForm = ({ onSubmit, onCancel }) => {
       const [startLat, startLng] = await geocodeAddress(startAddress);
       const [endLat, endLng] = await geocodeAddress(endAddress);
 
+      // Create the routing control without relying on an internal container
       routeControlRef.current = L.Routing.control({
         waypoints: [
           L.latLng(startLat, startLng),
@@ -88,11 +85,42 @@ const RouteForm = ({ onSubmit, onCancel }) => {
         addWaypoints: false,
         draggableWaypoints: false,
         fitSelectedRoutes: true,
-        show: false,
-      }).addTo(mapInstance.current);
+      });
+
+      const controlElement = routeControlRef.current.onAdd(mapInstance.current);
+      const instructionsContainer = document.getElementById("instructions");
+      if (instructionsContainer) {
+        instructionsContainer.innerHTML = "";
+        instructionsContainer.appendChild(controlElement);
+      }
     } catch (err) {
       console.error("Error fetching path:", err);
       setError("Failed to fetch route data");
+    }
+  };
+
+  const handleAnalyze = async () => {
+    if (routeData) {
+      try {
+        const [startLat, startLng] = await geocodeAddress(startAddress);
+        const [endLat, endLng] = await geocodeAddress(endAddress);
+        localStorage.setItem(
+          "routeData",
+          JSON.stringify({
+            start: [startLat, startLng],
+            end: [endLat, endLng],
+            startAddress,
+            endAddress,
+            fullData: routeData,
+          })
+        );
+        router.push("/route");
+      } catch (err) {
+        console.error("Error geocoding addresses:", err);
+        setError("Failed to retrieve correct addresses");
+      }
+    } else {
+      setError("No route data available. Please calculate a route first.");
     }
   };
 
@@ -123,37 +151,30 @@ const RouteForm = ({ onSubmit, onCancel }) => {
 
       {error && <p className="text-red-500 mb-4">{error}</p>}
 
-      <div ref={mapRef} className="w-full h-[400px] mb-4"></div>
-      {routeData && <RouteMap routeData={routeData} />}
+      <div className="flex gap-4">
+        <div ref={mapRef} className="w-2/3 h-[400px]"></div>
+        <div
+          id="instructions"
+          className="w-1/3 h-[400px] overflow-y-auto border p-2 bg-gray-50"
+        ></div>
+      </div>
 
-      <div className="flex justify-end space-x-2">
-          <button
-            onClick={onCancel}
-            className="px-4 py-2 border rounded hover:bg-gray-100 font-roboto"
-            type="button"
-          >
-            Cancel
-          </button>
-          <button
-            onClick={() => onSubmit(formData)}
-            className="px-4 py-2 bg-[#2196F3] hover:bg-[#1976D2] text-white rounded font-roboto transition-colors"
-            type="button"
-          >
-            Analyze
-          </button>
-        </div>
-    </div>
-  );
-};
-
-
-const RouteMap = ({ routeData }) => {
-  return (
-    <div className="p-4 border border-gray-200 rounded">
-      <h3 className="text-xl font-semibold mb-2">Route Data</h3>
-      <pre className="bg-gray-100 p-2 rounded overflow-x-auto">
-        {JSON.stringify(routeData, null, 2)}
-      </pre>
+      <div className="flex justify-end space-x-2 mt-4">
+        <button
+          onClick={onCancel}
+          className="px-4 py-2 border rounded hover:bg-gray-100 font-roboto"
+          type="button"
+        >
+          Cancel
+        </button>
+        <button
+          onClick={handleAnalyze}
+          className="px-4 py-2 bg-[#2196F3] hover:bg-[#1976D2] text-white rounded font-roboto transition-colors"
+          type="button"
+        >
+          Analyze
+        </button>
+      </div>
     </div>
   );
 };

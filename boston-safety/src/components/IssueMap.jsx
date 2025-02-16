@@ -79,7 +79,7 @@ function IssueMapVisual({ issue }) {
     }
     return [];
   };
-  
+
 
   const { data: nearbyIssues = [], isLoading, isError, error } = useQuery({
     queryKey: ['nearby-issues', issue?.latitude, issue?.longitude],
@@ -121,6 +121,8 @@ function IssueMapVisual({ issue }) {
               <div>
                 <strong>Category:</strong> {issue.category}<br />
                 <strong>Description:</strong> {issue.description}<br />
+                <img src={issue.photo_url} />
+                <p>{issue.extracted_text}</p>
                 <strong>Line:</strong> {issue.mbta_line}
               </div>
             </Popup>
@@ -138,7 +140,10 @@ function IssueMapVisual({ issue }) {
                 <div>
                   <strong>Category:</strong> {nearbyIssue.category}<br />
                   <strong>Description:</strong> {nearbyIssue.description}<br />
+                  <img src={nearbyIssue.photo_url} />
+                  <p>{nearbyIssue.extracted_text}</p>
                   <strong>Line:</strong> {nearbyIssue.line}
+                  
                 </div>
               </Popup>
             </Marker>

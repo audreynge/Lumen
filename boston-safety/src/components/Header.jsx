@@ -7,18 +7,18 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="font-roboto text-xl font-bold">
-                BostIn
+                Lumen
             </Link>
           </div>
           <div className="flex space-x-4">
-            <a href="#map" className="font-roboto hover:text-gray-200">
-              Map
-            </a>
             <a
-              href="#mbta-status"
+              href="#mbta-issues"
               className="font-roboto hover:text-gray-200"
             >
-              MBTA Status
+              MBTA Issues
+            </a>
+            <a href="#map" className="font-roboto hover:text-gray-200">
+              Map
             </a>
           </div>
         </div>

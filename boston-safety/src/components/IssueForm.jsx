@@ -1,8 +1,62 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
-import Tesseract from 'tesseract.js';
-
+import Tesseract from "tesseract.js";
 import { useUpload } from "../utilities/runtime-helpers";
+
+const preprocessImage = (file) => {
+  return new Promise((resolve, reject) => {
+    const img = new Image();
+    const url = URL.createObjectURL(file);
+    img.src = url;
+    img.onload = () => {
+      const canvas = document.createElement("canvas");
+      canvas.width = img.width;
+      canvas.height = img.height;
+      const ctx = canvas.getContext("2d");
+      ctx.drawImage(img, 0, 0);
+      const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+      const data = imageData.data;
+      for (let i = 0; i < data.length; i += 4) {
+        const avg = 0.299 * data[i] + 0.587 * data[i + 1] + 0.114 * data[i + 2];
+        data[i] = avg;
+        data[i + 1] = avg;
+        data[i + 2] = avg;
+      }
+      ctx.putImageData(imageData, 0, 0);
+      canvas.toBlob((blob) => {
+        resolve(blob);
+      }, file.type);
+    };
+    img.onerror = (err) => {
+      reject(err);
+    };
+  });
+};
+
+const extractIssueDetails = (text) => {
+  const lowerText = text.toLowerCase();
+  let issueCategory = "";
+  let issueMessage = "";
+  const delayRegex = /(\d+)\+\s*min/;
+  const delayMatch = text.match(delayRegex);
+  if (delayMatch) {
+    issueCategory = "Delay";
+    issueMessage = `Delay for ${delayMatch[0]}`;
+  } else if (lowerText.includes("outage")) {
+    issueCategory = "Outage";
+    issueMessage = "Outage detected";
+  } else if (lowerText.includes("track change")) {
+    issueCategory = "Track Change";
+    issueMessage = "Track change indicated";
+  } else if (lowerText.includes("suspension")) {
+    issueCategory = "Suspension";
+    issueMessage = "Suspension indicated";
+  } else {
+    issueCategory = "Other";
+    issueMessage = "Other issue detected";
+  }
+  return { issueCategory, issueMessage: `Extracted text: ${issueMessage}` };
+};
 
 function IssueForm({ onSubmit, onCancel }) {
   const [error, setError] = useState(null);
@@ -13,7 +67,9 @@ function IssueForm({ onSubmit, onCancel }) {
     latitude: null,
     longitude: null,
     photo_url: null,
+    extracted_text: "",
   });
+  const [detectedIssue, setDetectedIssue] = useState(null);
   const [uploading, setUploading] = useState(false);
   const [upload] = useUpload();
   const [showMap, setShowMap] = useState(false);
@@ -45,22 +101,45 @@ function IssueForm({ onSubmit, onCancel }) {
           longitude: position.coords.longitude,
         }));
       },
-      (error) => console.error("Location error:", error)
+      (err) => console.error("Location error:", err)
     );
   }, []);
 
-  const handleImageUpload = (file) => {
-    Tesseract.recognize(
-      file,
-      'eng',
-      {
+  const handleImageUpload = async (file) => {
+    setUploading(true);
+    try {
+      const processedBlob = await preprocessImage(file);
+      Tesseract.recognize(processedBlob, "eng", {
         logger: (m) => console.log(m),
-      }
-    ).then(({ data: { text } }) => {
-      console.log(text);
-    });
+        config: {
+          tessedit_char_whitelist: "0123456789+min",
+          preserve_interword_spaces: "1",
+        },
+      })
+        .then(({ data: { text } }) => {
+          console.log("OCR extracted text:", text);
+          const { issueCategory, issueMessage } = extractIssueDetails(text);
+          setFormData((prev) => ({ ...prev, category: issueCategory }));
+          setDetectedIssue(issueMessage);
+          setFormData((prev) => ({
+            ...prev,
+            photo_url: URL.createObjectURL(file),
+            extracted_text: issueMessage,
+          }));
+        })
+        .catch((err) => {
+          console.error("OCR error:", err);
+          setError("Failed to process image");
+        })
+        .finally(() => {
+          setUploading(false);
+        });
+    } catch (err) {
+      console.error("Preprocessing error:", err);
+      setError("Failed to process image");
+      setUploading(false);
+    }
   };
-  
 
   useEffect(() => {
     if (showMap) {
@@ -71,13 +150,15 @@ function IssueForm({ onSubmit, onCancel }) {
               new Promise((resolve) => {
                 const link = document.createElement("link");
                 link.rel = "stylesheet";
-                link.href = "https://unpkg.com/leaflet@1.7.1/dist/leaflet.css";
+                link.href =
+                  "https://unpkg.com/leaflet@1.7.1/dist/leaflet.css";
                 document.head.appendChild(link);
                 link.onload = resolve;
               }),
               new Promise((resolve) => {
                 const script = document.createElement("script");
-                script.src = "https://unpkg.com/leaflet@1.7.1/dist/leaflet.js";
+                script.src =
+                  "https://unpkg.com/leaflet@1.7.1/dist/leaflet.js";
                 document.head.appendChild(script);
                 script.onload = resolve;
               }),
@@ -211,10 +292,15 @@ function IssueForm({ onSubmit, onCancel }) {
           <input
             type="file"
             accept="image/*"
-            onChange={(e) => handleImageUpload(e.target.files[0])}
+            capture="camera"
+            onChange={(e) =>
+              e.target.files?.[0] && handleImageUpload(e.target.files[0])
+            }
             className="w-full p-2 border rounded"
           />
-          {uploading && <div className="mt-2 font-roboto">Uploading...</div>}
+          {uploading && (
+            <div className="mt-2 font-roboto">Processing...</div>
+          )}
           {formData.photo_url && (
             <img
               src={formData.photo_url}
@@ -222,9 +308,16 @@ function IssueForm({ onSubmit, onCancel }) {
               className="mt-2 max-w-full h-40 object-cover rounded"
             />
           )}
+          {detectedIssue && (
+            <div className="mt-2 p-2 bg-green-100 border border-green-300 rounded text-green-800">
+              {detectedIssue}
+            </div>
+          )}
         </div>
 
-        {error && <div className="text-[#FF0000] font-roboto">{error}</div>}
+        {error && (
+          <div className="text-[#FF0000] font-roboto">{error}</div>
+        )}
 
         <div className="flex justify-end space-x-2">
           <button

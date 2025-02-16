@@ -13,7 +13,28 @@ function Home() {
   const [routeFormData, setRouteFormData] = useState(null);
   const [mapLoaded, setMapLoaded] = useState(false);
 
+  // const postData = async (formData) => {
+  //   try {
+  //     const queryParams = new URLSearchParams(formData).toString();
+  //     const url = `http://127.0.0.1:5000/issue?${queryParams}`;
+  
+  //     const response = await fetch(url, {
+  //       method: 'POST',
+  //     });
+  
+  //     if (!response.ok) {
+  //       throw new Error(`Error: ${response.statusText}`);
+  //     }
+  
+  //     const data = await response.json();
+  //     console.log('Issue successfully submitted:', data);
+  //   } catch (error) {
+  //     console.error('Error submitting issue:', error);
+  //   }
+  // };
+
   const handleIssueSubmit = (data) => {
+    postData(data);
     console.log("Form submitted:", data);
     setIssueFormData(data);
     setShowIssueForm(false);
@@ -90,10 +111,10 @@ function Home() {
         </div>
       </section>
 
-      <section id="map" className="py-12">
+      <section id="mbta-issues" className="py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-roboto text-3xl font-bold mb-8">
-            MBTA Issues Map
+            MBTA Issues
           </h2>
           {!mapLoaded ? (
             <div className="h-[600px] flex items-center justify-center">
