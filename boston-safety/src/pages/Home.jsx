@@ -6,6 +6,9 @@ import IssueForm from "../components/IssueForm";
 import IssueMap from "../components/IssueMap";
 import RouteForm from "../components/RouteForm";
 
+const apiKey = process.env.REACT_APP_OPENAI_API_KEY;
+console.log(apiKey);
+
 function Home() {
   const [showIssueForm, setShowIssueForm] = useState(false);
   const [issueFormData, setIssueFormData] = useState(null);
@@ -34,7 +37,7 @@ function Home() {
   // };
 
   const handleIssueSubmit = (data) => {
-    postData(data);
+    // postData(data);
     console.log("Form submitted:", data);
     setIssueFormData(data);
     setShowIssueForm(false);

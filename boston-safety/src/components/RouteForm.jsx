@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import "leaflet-routing-machine";
+import axios from "axios";
 import { useRouter } from "next/navigation";
 
 const geocodeAddress = async (address) => {
@@ -104,6 +105,25 @@ const RouteForm = ({ onCancel }) => {
       try {
         const [startLat, startLng] = await geocodeAddress(startAddress);
         const [endLat, endLng] = await geocodeAddress(endAddress);
+        const prompt = `Analyze the safety of the route from ${startAddress} to ${endAddress} in Boston, MA. Consider factors such as crime rates, lighting, and historical incident data.`;
+        const response = await axios.post(
+          "https://api.openai.com/v1/completions",
+          {
+            model: "gpt-3.5-turbo-instruct",
+            prompt: prompt,
+            max_tokens: 150,
+            temperature: 0.7,
+          },
+          {
+            headers: {
+              "Content-Type": "application/json",
+              Authorization: `Bearer `,
+            },
+          }
+        );
+        const safetyAnalysis = response.data.choices[0].text.trim();
+        console.log(safetyAnalysis);
+
         localStorage.setItem(
           "routeData",
           JSON.stringify({
@@ -112,6 +132,7 @@ const RouteForm = ({ onCancel }) => {
             startAddress,
             endAddress,
             fullData: routeData,
+            safetyAnalysis,
           })
         );
         router.push("/route");
