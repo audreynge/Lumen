@@ -4,21 +4,35 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import IssueForm from "../components/IssueForm";
 import IssueMap from "../components/IssueMap";
+import RouteForm from "../components/RouteForm";
 
 function Home() {
   const [showIssueForm, setShowIssueForm] = useState(false);
-  const [formData, setFormData] = useState(null);
+  const [issueFormData, setIssueFormData] = useState(null);
+  const [showRouteForm, setShowRouteForm] = useState(false);
+  const [routeFormData, setRouteFormData] = useState(null);
   const [mapLoaded, setMapLoaded] = useState(false);
 
   const handleIssueSubmit = (data) => {
     console.log("Form submitted:", data);
-    setFormData(data);
+    setIssueFormData(data);
     setShowIssueForm(false);
   };
 
   const handleIssueCancel = () => {
     setShowIssueForm(false);
   };
+
+
+  const handleRouteSubmit = (data) => {
+    console.log("Form submitted:", data);
+    setIssueFormData(data);
+    setShowIssueForm(false);
+  };
+
+  const handleRouteCancel = () => {
+    setShowRouteForm(false);
+  }
 
   useEffect(() => {
     if (!mapLoaded) {
@@ -57,6 +71,12 @@ function Home() {
                 >
                   Report an Issue
                 </button>
+                <button
+                  onClick={() => setShowRouteForm(true)}
+                  className="bg-white text-[#CC0000] font-roboto px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
+                >
+                  Check your Route
+                </button>
               </div>
             </div>
             <div className="hidden md:block md:w-1/2 ml-8 mr-4">
@@ -81,7 +101,7 @@ function Home() {
             </div>
           ) : (
             <div className="h-[600px] relative rounded-lg overflow-hidden shadow-lg">
-              <IssueMap issue={formData} />
+              <IssueMap issue={issueFormData} />
             </div>
           )}
         </div>
@@ -104,6 +124,34 @@ function Home() {
                 <IssueForm
                   onSubmit={handleIssueSubmit}
                   onCancel={handleIssueCancel}
+                />
+              ) : (
+                <div className="flex items-center justify-center h-40">
+                  <div className="text-[#CC0000]">Loading map...</div>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {showRouteForm && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
+          <div className="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div className="p-4 border-b border-gray-200 flex justify-between items-center">
+              <h3 className="font-roboto text-xl font-bold">Calculate Your Route</h3>
+              <button
+                onClick={() => setShowRouteForm(false)}
+                className="text-gray-500 hover:text-gray-700"
+              >
+                <i className="fas fa-times"></i>
+              </button>
+            </div>
+            <div className="p-4">
+              {mapLoaded ? (
+                <RouteForm
+                  onSubmit={handleRouteSubmit}
+                  onCancel={handleRouteCancel}
                 />
               ) : (
                 <div className="flex items-center justify-center h-40">

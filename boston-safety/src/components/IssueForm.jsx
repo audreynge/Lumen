@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
+import Tesseract from 'tesseract.js';
 
 import { useUpload } from "../utilities/runtime-helpers";
 
@@ -20,12 +21,10 @@ function IssueForm({ onSubmit, onCancel }) {
   const markerRef = useRef(null);
 
   const categories = [
-    "Infrastructure",
-    "Crime",
-    "Transit",
-    "Cleanliness",
-    "Construction",
-    "Safety",
+    "Delay",
+    "Outage",
+    "Track Change",
+    "Suspension",
     "Other",
   ];
 
@@ -50,19 +49,18 @@ function IssueForm({ onSubmit, onCancel }) {
     );
   }, []);
 
-  const handlePhotoUpload = async (file) => {
-    setUploading(true);
-    try {
-      const { url, error: uploadError } = await upload({ file });
-      if (uploadError) throw new Error(uploadError);
-      setFormData((prev) => ({ ...prev, photo_url: url }));
-    } catch (err) {
-      setError("Failed to upload photo");
-      console.error(err);
-    } finally {
-      setUploading(false);
-    }
+  const handleImageUpload = (file) => {
+    Tesseract.recognize(
+      file,
+      'eng',
+      {
+        logger: (m) => console.log(m),
+      }
+    ).then(({ data: { text } }) => {
+      console.log(text);
+    });
   };
+  
 
   useEffect(() => {
     if (showMap) {
@@ -132,8 +130,6 @@ function IssueForm({ onSubmit, onCancel }) {
 
   return (
     <div className="p-4 bg-white rounded-lg shadow max-w-2xl mx-auto">
-      <h2 className="text-2xl font-bold mb-4 font-roboto">Report an Issue</h2>
-
       <div className="space-y-4">
         <div>
           <label className="block mb-2 font-roboto">Category</label>
@@ -215,9 +211,7 @@ function IssueForm({ onSubmit, onCancel }) {
           <input
             type="file"
             accept="image/*"
-            onChange={(e) =>
-              e.target.files?.[0] && handlePhotoUpload(e.target.files[0])
-            }
+            onChange={(e) => handleImageUpload(e.target.files[0])}
             className="w-full p-2 border rounded"
           />
           {uploading && <div className="mt-2 font-roboto">Uploading...</div>}
