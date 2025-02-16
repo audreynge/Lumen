@@ -98,8 +98,9 @@ def get_optimized_path():
         start - start address
         end - end address
     :return:
-        json with single field "stops" which has all MBTA stops along the optimized path
-        not ordered yet, working on that
+        json with 2 fields:
+        "stops" which has all MBTA stops along the optimized path, in order of traversal
+        "latlons" which has tuples (latitude, longitude) along the optimized path in order
 
     example usage (ALL ONE LINE): http://127.0.0.1:5000/path?start=1%20Science%20Pk,%20Boston,%20MA
     &end=963%20South%20St,%20Roslindale,%20MA
@@ -107,5 +108,5 @@ def get_optimized_path():
     start = request.args.get('start')
     end = request.args.get('end')
 
-    stops = optimized_path(start, end)
-    return jsonify({'stops': stops})
+    out = optimized_path(start, end)
+    return jsonify(out)

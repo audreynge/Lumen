@@ -120,15 +120,18 @@ def optimized_path(start, end):
     gdf_stops_sorted = gdf_stops_near_path.sort_values('distance_along_path')
 
     # Extract ordered stop names
-    mbta_stops_near_path = gdf_stops_sorted['stop_name'].tolist()
+    stop_names = gdf_stops_sorted['stop_name'].tolist()
+    stop_latlons = [(lat, lon) for lat, lon in
+                    zip(gdf_stops_sorted['stop_lat'].tolist(), gdf_stops_sorted['stop_lon'].tolist())]
 
-    return mbta_stops_near_path
+    out = {'names': stop_names, 'latlons': stop_latlons}
+    return out
 
 def main():
     start = "1 Science Pk, Boston, MA"
     end = "963 South St, Roslindale, MA"
-    for n in optimized_path(start, end):
-        print(n)
+    _ = optimized_path(start, end)
+    print(_)
 
 if __name__ == '__main__':
     main()
