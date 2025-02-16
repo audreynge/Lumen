@@ -4,6 +4,7 @@ Will try to minimize weight where a neighborhood (node)'s weight is the # of sho
 heavy WIP
 """
 
+import time
 import osmnx as ox
 import networkx as nx
 from geopy.geocoders import Nominatim
@@ -11,6 +12,7 @@ import geopandas as gpd
 import pandas as pd
 from shapely.geometry import LineString, Point
 import pickle
+from shapely.ops import nearest_points
 
 # Step 1: Geocode the addresses
 def geocode_address(address):
@@ -18,89 +20,99 @@ def geocode_address(address):
     location = geolocator.geocode(address)
     return (location.latitude, location.longitude)
 
-start_address = "1 Science Pk, Boston, MA"
-end_address = "963 South St, Roslindale, MA" # test addresses of certain landmarks
+def calculate_distance_along_path(stop_point, path_line):
+    # Find the nearest point on the path to the stop
+    nearest_point_on_path = nearest_points(stop_point, path_line)[1]
+    # Calculate the distance along the path to the nearest point
+    distance_along_path = path_line.project(nearest_point_on_path)
+    return distance_along_path
 
-start_point = geocode_address(start_address)
-end_point = geocode_address(end_address)
+def optimized_path(start, end):
+    # sample start = "1 Science Pk, Boston, MA"
+    # sample end = "963 South St, Roslindale, MA"
+    start_address = start
+    end_address = end # test addresses of certain landmarks
 
-# assign weights to neighborhoods based on shootings
-df = pd.read_csv('shootings.csv')
-neighborhood_weights = df['NEIGHBORHOOD'].value_counts().to_dict()
+    start_point = geocode_address(start_address)
+    end_point = geocode_address(end_address)
 
-# will pickle on first run, speeding up future runs
-try:
-    with open("boston_graph.pickle", "rb") as f:
-        G = pickle.load(f)
-except:
-    G = ox.graph_from_place("Boston, Massachusetts, USA", network_type="all")
-    with open("boston_graph.pickle", "wb") as f:
-        pickle.dump(G, f)
+    # assign weights to neighborhoods based on shootings
+    df = pd.read_csv('shootings.csv')
+    neighborhood_weights = df['NEIGHBORHOOD'].value_counts().to_dict()
 
-# load neighborhood boundaries from pre downloaded data
-gdf_neighborhoods = gpd.read_file('bpda_neighborhood_boundaries/BPDA_Neighborhood_Boundaries.shp')
+    # will pickle on first run, speeding up future runs
+    try:
+        with open("boston_graph.pickle", "rb") as f:
+            G = pickle.load(f)
+    except:
+        G = ox.graph_from_place("Boston, Massachusetts, USA", network_type="all")
 
-# match crs
-gdf_neighborhoods = gdf_neighborhoods.to_crs(epsg=4326)
+        gdf_neighborhoods = gpd.read_file('bpda_neighborhood_boundaries/BPDA_Neighborhood_Boundaries.shp')
 
-# assign neighborhood weights to edges
-for u, v, data in G.edges(data=True):
-    edge_geometry = data.get("geometry", None)
-    if edge_geometry:
-        # Find which neighborhoods the edge intersects
-        intersecting_neighborhoods = gdf_neighborhoods[gdf_neighborhoods.intersects(edge_geometry)]
-        if not intersecting_neighborhoods.empty:
-            # Assign the maximum weight of the intersecting neighborhoods
-            max_weight = max(
-                neighborhood_weights.get(name, 1)  # Default weight = 1 if neighborhood not in the dictionary
-                for name in intersecting_neighborhoods["name"]  # Replace "name" with the correct column
-            )
-            data["weight"] = max_weight
-        else:
-            # If the edge doesn't intersect any neighborhoods, assign a default weight
-            data["weight"] = 1
-    else:
-        # If the edge has no geometry, assign a default weight
-        data["weight"] = 1
+        # match crs
+        gdf_neighborhoods = gdf_neighborhoods.to_crs(epsg=4326)
 
-# find the nearest nodes to the start and end points
-start_node = ox.distance.nearest_nodes(G, start_point[1], start_point[0])
-end_node = ox.distance.nearest_nodes(G, end_point[1], end_point[0])
+        # assign neighborhood weights to edges
+        for u, v, data in G.edges(data=True):
+            edge_geometry = data.get("geometry", None)
+            if edge_geometry:
+                # Find which neighborhoods the edge intersects
+                intersecting_neighborhoods = gdf_neighborhoods[gdf_neighborhoods.intersects(edge_geometry)]
+                if not intersecting_neighborhoods.empty:
+                    # Assign the maximum weight of the intersecting neighborhoods
+                    max_weight = max(
+                        neighborhood_weights.get(name, 1)  # Default weight = 1 if neighborhood not in the dictionary
+                        for name in intersecting_neighborhoods["name"]  # Replace "name" with the correct column
+                    )
+                    data["weight"] = max_weight
+                else:
+                    # If the edge doesn't intersect any neighborhoods, assign a default weight
+                    data["weight"] = 1
+            else:
+                # If the edge has no geometry, assign a default weight
+                data["weight"] = 1
 
-# find the shortest path that minimizes the total weight
-shortest_path = nx.shortest_path(G, start_node, end_node, weight="weight")
+        with open("boston_graph.pickle", "wb") as f:
+            pickle.dump(G, f)
 
-# below is all to show path
-# get stops for MBTA
-stops_df = pd.read_csv('mbta_gtfs_data/stops.txt')
 
-# convert the shortest path into a LineString
-path_coords = [(G.nodes[node]["x"], G.nodes[node]["y"]) for node in shortest_path]
-path_line = LineString(path_coords)
+    # find the nearest nodes to the start and end points
+    start_node = ox.distance.nearest_nodes(G, start_point[1], start_point[0])
+    end_node = ox.distance.nearest_nodes(G, end_point[1], end_point[0])
 
-# create a GeoDataFrame for the path
-gdf_path = gpd.GeoDataFrame(geometry=[path_line], crs="EPSG:4326")
+    # find the shortest path that minimizes the total weight
+    shortest_path = nx.shortest_path(G, start_node, end_node, weight="weight")
 
-# create a GeoDataFrame for the MBTA stops
-gdf_stops = gpd.GeoDataFrame(
-    stops_df,
-    geometry=gpd.points_from_xy(stops_df["stop_lon"], stops_df["stop_lat"]),
-    crs="EPSG:4326"
-)
+    # below is all to show path
+    # get stops for MBTA
+    stops_df = pd.read_csv('mbta_gtfs_data/stops.txt')
 
-# find stops within a certain distance of the path, weird encoding is needed
-gdf_path_projected = gdf_path.to_crs(epsg=32619)  # UTM zone 19N
-gdf_stops_projected = gdf_stops.to_crs(epsg=32619)  # UTM zone 19N
+    # convert the shortest path into a LineString
+    path_coords = [(G.nodes[node]["x"], G.nodes[node]["y"]) for node in shortest_path]
+    path_line = LineString(path_coords)
 
-# find stops within a certain distance of the path (e.g., 500 meters)
-distance_threshold = 100  # Distance in meters
-gdf_stops_near_path = gdf_stops_projected[gdf_stops_projected.distance(gdf_path_projected.union_all()) <= distance_threshold]
-gdf_stops_near_path = gdf_stops_near_path.drop_duplicates(subset=["stop_name"])  # Use "stop_name" if "stop_id" is not available
+    # create a GeoDataFrame for the path
+    gdf_path = gpd.GeoDataFrame(geometry=[path_line], crs="EPSG:4326")
 
-# extract the stop names
-mbta_stops_near_path = gdf_stops_near_path["stop_name"].tolist()
+    # create a GeoDataFrame for the MBTA stops
+    gdf_stops = gpd.GeoDataFrame(
+        stops_df,
+        geometry=gpd.points_from_xy(stops_df["stop_lon"], stops_df["stop_lat"]),
+        crs="EPSG:4326"
+    )
 
-# print the MBTA stops
-print("MBTA stops near the shortest path:")
-for stop in mbta_stops_near_path:
-    print(stop)
+    # find stops within a certain distance of the path, weird encoding is needed
+    gdf_path_projected = gdf_path.to_crs(epsg=32619)  # UTM zone 19N
+    gdf_stops_projected = gdf_stops.to_crs(epsg=32619)  # UTM zone 19N
+
+    # find stops within a certain distance of the path (e.g., 500 meters)
+    distance_threshold = 100  # Distance in meters
+    gdf_stops_near_path = gdf_stops_projected[gdf_stops_projected.distance(gdf_path_projected.union_all()) <= distance_threshold]
+    gdf_stops_near_path = gdf_stops_near_path.drop_duplicates(subset=["stop_name"])
+
+    # extract the stop names
+    mbta_stops_near_path = gdf_stops_near_path["stop_name"].tolist()
+
+    # print the MBTA stops
+    return mbta_stops_near_path
+
