@@ -1,112 +1,24 @@
 "use client";
-import React from "react";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import IssueForm from "../components/IssueForm"
+import IssueForm from "../components/IssueForm";
 import IssueMap from "../components/IssueMap";
-import ActiveIssues from "../components/ActiveIssues";
 
-function Page() {
+function Home() {
   const [showIssueForm, setShowIssueForm] = useState(false);
-  const [issues, setIssues] = useState([]);
-  const [selectedCategories, setSelectedCategories] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-  const [selectedIssue, setSelectedIssue] = useState(null);
-  const [solutions, setSolutions] = useState([]);
-  const [submitLoading, setSubmitLoading] = useState(false);
+  const [formData, setFormData] = useState(null);
   const [mapLoaded, setMapLoaded] = useState(false);
 
-  const categories = [
-    { value: "mbta", label: "MBTA Transit", color: "#FF4B4B" },
-    {
-      value: "historic_preservation",
-      label: "Historic Preservation",
-      color: "#8B4513",
-    },
-    {
-      value: "winter_infrastructure",
-      label: "Winter Infrastructure",
-      color: "#87CEEB",
-    },
-    { value: "student_housing", label: "Student Housing", color: "#4B83FF" },
-    {
-      value: "bicycle_infrastructure",
-      label: "Bicycle Infrastructure",
-      color: "#32CD32",
-    },
-    { value: "waterfront", label: "Waterfront & Harbor", color: "#00CED1" },
-    { value: "parking", label: "Parking", color: "#FFD700" },
-    { value: "traffic", label: "Traffic", color: "#FF8C00" },
-    { value: "parks", label: "Parks & Common", color: "#228B22" },
-    { value: "other", label: "Other", color: "#9E9E9E" },
-  ];
-
-  const mbta_lines = [
-    "Red Line",
-    "Blue Line",
-    "Orange Line",
-    "Green Line - B",
-    "Green Line - C",
-    "Green Line - D",
-    "Green Line - E",
-    "Silver Line",
-  ];
-
-  const fetchIssues = async () => {
-    setLoading(true);
-    try {
-      const response = await fetch("/api/list-issues", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ sort_by: "impact_score" }),
-      });
-      if (!response.ok) {
-        throw new Error(`Failed to fetch issues: ${response.statusText}`);
-      }
-      const data = await response.json();
-      setIssues(data.issues);
-    } catch (err) {
-      console.error(err);
-      setError("Failed to load issues. Please try again later.");
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const handleIssueSubmit = async (data) => {
+  const handleIssueSubmit = (data) => {
     console.log("Form submitted:", data);
+    setFormData(data);
     setShowIssueForm(false);
   };
 
   const handleIssueCancel = () => {
     setShowIssueForm(false);
   };
-
-  const handleMarkerClick = async (issue) => {
-    setSelectedIssue(issue);
-    try {
-      const response = await fetch("/api/get-issue-solutions", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ issue_id: issue.id }),
-      });
-      if (!response.ok) {
-        throw new Error(`Failed to fetch solutions: ${response.statusText}`);
-      }
-      const data = await response.json();
-      setSolutions(data.solutions);
-    } catch (err) {
-      console.error(err);
-      setError("Failed to load solutions. Please try again.");
-      setSolutions([]);
-    }
-  };
-
-  useEffect(() => {
-    fetchIssues();
-  }, []);
 
   useEffect(() => {
     if (!mapLoaded) {
@@ -121,23 +33,6 @@ function Page() {
       document.head.appendChild(script);
     }
   }, [mapLoaded]);
-
-  const handleVote = async (id, direction) => {
-    try {
-      const response = await fetch("/api/vote-solution", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ solution_id: id, direction }),
-      });
-      if (!response.ok) {
-        throw new Error("Failed to vote on solution");
-      }
-      handleMarkerClick(selectedIssue);
-    } catch (err) {
-      console.error(err);
-      setError("Failed to vote. Please try again.");
-    }
-  };
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -184,31 +79,12 @@ function Page() {
             <div className="h-[600px] flex items-center justify-center">
               <div className="text-[#CC0000]">Loading map...</div>
             </div>
-          ) : loading ? (
-            <div className="h-[600px] flex items-center justify-center">
-              <i className="fas fa-spinner fa-spin text-4xl text-[#CC0000]"></i>
-            </div>
           ) : (
             <div className="h-[600px] relative rounded-lg overflow-hidden shadow-lg">
-              <IssueMap
-                issues={issues}
-                selectedCategories={selectedCategories}
-                onCategoryToggle={(category) => {
-                  setSelectedCategories((prev) =>
-                    prev.includes(category)
-                      ? prev.filter((c) => c !== category)
-                      : [...prev, category]
-                  );
-                }}
-                onMarkerClick={handleMarkerClick}
-              />
+              <IssueMap issue={formData} />
             </div>
           )}
         </div>
-      </section>
-
-      <section id="mbta-status" className="py-12">
-        <ActiveIssues mbtaLines={mbta_lines} issues={issues}/>
       </section>
 
       {showIssueForm && (
@@ -219,7 +95,6 @@ function Page() {
               <button
                 onClick={() => setShowIssueForm(false)}
                 className="text-gray-500 hover:text-gray-700"
-                disabled={submitLoading}
               >
                 <i className="fas fa-times"></i>
               </button>
@@ -229,7 +104,6 @@ function Page() {
                 <IssueForm
                   onSubmit={handleIssueSubmit}
                   onCancel={handleIssueCancel}
-                  loading={submitLoading}
                 />
               ) : (
                 <div className="flex items-center justify-center h-40">
@@ -246,4 +120,4 @@ function Page() {
   );
 }
 
-export default Page;
+export default Home;
