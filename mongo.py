@@ -15,7 +15,7 @@ print(db.list_collection_names())
 test_data = {
     'category': 'outage',
     'description': 'A dragon wandered onto the train tracks and ate a train',
-    'address': '1600 Pennsylvania Avenue',
+    'latlon': '42.5;-71.2',
     'line': 'green'
 }
 

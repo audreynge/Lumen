@@ -14,17 +14,17 @@ def add_service_issue():
     rest api arguments:
         category - category of issue (outage, delay, etc)
         description - description of issue
-        address - address of issue - try to be exact
+        latitude/longitude - latitude, longitude of issue
         line - line that issue occurred on (ex: green)
     :return:
         the mongodb object returned when the data is inserted
 
     example usage (ALL ONE LINE): http://127.0.0.1:5000/issue?category=apocalypse&
-        description=THE%20END%20IS%20UPON%20US&address=650%20Columbus%20Avenue&line=green
+        description=THE%20END%20IS%20UPON%20US&latitude=42.7&longitude=-71.5&line=green
     """
     category = request.args.get('category')
     description = request.args.get('description')
-    address = request.args.get('address')
+    latitude, longitude = request.args.get('latitude'), request.args.get('longitude')
     line = request.args.get('line')
 
     client = MongoClient(
@@ -39,7 +39,7 @@ def add_service_issue():
     data = {
         'category': category,
         'description': description,
-        'address': address,
+        'latlon': f'{latitude};{longitude}',
         'line': line
     }
 
