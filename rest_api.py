@@ -62,7 +62,7 @@ def find_nearby_issues():
     :return:
         every row where the location matches
 
-    example usage: http://127.0.0.1:5000/find?latitude=40.7128&longitude=-74.0060&radius=1000
+    example usage: http://127.0.0.1:5000/find?latitude=42.3604&longitude=-71.058&radius=10000
     """
     client = MongoClient(
         'mongodb://localhost:27017'
