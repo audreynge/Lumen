@@ -107,12 +107,28 @@ def optimized_path(start, end):
 
     # find stops within a certain distance of the path (e.g., 500 meters)
     distance_threshold = 100  # Distance in meters
-    gdf_stops_near_path = gdf_stops_projected[gdf_stops_projected.distance(gdf_path_projected.union_all()) <= distance_threshold]
+    gdf_stops_near_path = gdf_stops_projected[gdf_stops_projected.distance
+                                              (gdf_path_projected.union_all()) <= distance_threshold]
     gdf_stops_near_path = gdf_stops_near_path.drop_duplicates(subset=["stop_name"])
 
-    # extract the stop names
-    mbta_stops_near_path = gdf_stops_near_path["stop_name"].tolist()
+    path_line_projected = gdf_path_projected.geometry.iloc[0]
 
-    # print the MBTA stops
+    # Calculate distance along the path for each stop and sort
+    gdf_stops_near_path['distance_along_path'] = gdf_stops_near_path.geometry.apply(
+        lambda geom: path_line_projected.project(geom)
+    )
+    gdf_stops_sorted = gdf_stops_near_path.sort_values('distance_along_path')
+
+    # Extract ordered stop names
+    mbta_stops_near_path = gdf_stops_sorted['stop_name'].tolist()
+
     return mbta_stops_near_path
 
+def main():
+    start = "1 Science Pk, Boston, MA"
+    end = "963 South St, Roslindale, MA"
+    for n in optimized_path(start, end):
+        print(n)
+
+if __name__ == '__main__':
+    main()
