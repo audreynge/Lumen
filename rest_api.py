@@ -27,7 +27,7 @@ def add_service_issue():
     """
     category = request.args.get('category')
     description = request.args.get('description')
-    latitude, longitude = request.args.get('latitude'), request.args.get('longitude')
+    latitude, longitude = float(request.args.get('latitude')), float(request.args.get('longitude'))
     line = request.args.get('line')
 
     client = MongoClient(
