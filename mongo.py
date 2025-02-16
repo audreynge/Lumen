@@ -10,17 +10,20 @@ client = MongoClient(
 
 db = client['mbta']
 col = db['service_issues']
+
 # col.create_index([("location", "2dsphere")])
 col.drop()
+if "location_2dsphere" not in col.index_information():
+    col.create_index([("location", "2dsphere")])
 print(db.list_collection_names())
 
-latitudes = [40.7128, 42.3604, 42.3500, 42.3402, 42.2300]  # Example: New York City
+latitudes = [40.7128, 42.3604, 42.3500, 42.3402, 42.2300]
 longitudes = [-74.0060, -71.0580, -71.0573, -71.0579, -71.0592]
 
 # Create the GeoJSON Point object
 locations = [{
     "type": "Point",
-    "coordinates": [lat, lon]
+    "coordinates": [lon, lat]
 } for lat, lon in zip(latitudes, longitudes)]
 
 # Create the document to insert
@@ -63,4 +66,6 @@ result = col.insert_many(documents)
 cursor = col.find()
 for entry in cursor:
     print(entry)
+
+
 
