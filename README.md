@@ -1,2 +1,2 @@
-# innovaite2025
+# Lumen
 InnovAIte Hackathon 2025 @ Northeastern
