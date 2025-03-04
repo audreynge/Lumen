@@ -9,7 +9,7 @@ import RouteForm from "../components/RouteForm";
 const apiKey = process.env.REACT_APP_OPENAI_API_KEY;
 console.log(apiKey);
 
-function Home() {
+const Home = () => {
   const [showIssueForm, setShowIssueForm] = useState(false);
   const [issueFormData, setIssueFormData] = useState(null);
   const [showRouteForm, setShowRouteForm] = useState(false);
@@ -190,6 +190,6 @@ function Home() {
       <Footer />
     </div>
   );
-}
+};
 
 export default Home;

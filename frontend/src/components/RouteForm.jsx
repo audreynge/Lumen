@@ -31,9 +31,14 @@ const RouteForm = ({ onCancel }) => {
   const router = useRouter();
 
   useEffect(() => {
+    if (mapInstance.current) return;
+  
     const initializeMap = async () => {
       try {
         const [lat, lng] = await geocodeAddress(startAddress);
+        if (mapRef.current && mapRef.current._leaflet_id) {
+          mapRef.current._leaflet_id = null;
+        }
         mapInstance.current = L.map(mapRef.current).setView([lat, lng], 13);
         L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
           attribution:
@@ -43,8 +48,17 @@ const RouteForm = ({ onCancel }) => {
         console.error("Error initializing map:", err);
       }
     };
+
     initializeMap();
+  
+    return () => {
+      if (mapInstance.current) {
+        mapInstance.current.remove();
+        mapInstance.current = null;
+      }
+    };
   }, []);
+
 
   const fetchPath = async (start, end) => {
     try {
@@ -111,18 +125,17 @@ const RouteForm = ({ onCancel }) => {
           {
             model: "gpt-3.5-turbo-instruct",
             prompt: prompt,
-            max_tokens: 150,
+            max_tokens: 400,
             temperature: 0.7,
           },
           {
             headers: {
               "Content-Type": "application/json",
-              Authorization: `Bearer `,
+              Authorization: `Bearer ${process.env.NEXT_PUBLIC_OPENAI_API_KEY}`,
             },
           }
         );
-        const safetyAnalysis = response.data.choices[0].text.trim();
-        console.log(safetyAnalysis);
+        const safetyAnalysis = response.data.choices[0].text;
 
         localStorage.setItem(
           "routeData",
