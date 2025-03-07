@@ -8,7 +8,7 @@ client = MongoClient(
     'mongodb://localhost:27017'
 )
 
-db = client['mbta']
+db = client['issues']
 col = db['service_issues']
 
 # col.create_index([("location", "2dsphere")])
@@ -29,34 +29,34 @@ locations = [{
 # Create the document to insert
 documents = [
     {
-        'category': 'outage',
-        'description': 'WALLAHI I AM FINISHED',
+        'category': 'Delay',
+        'description': 'Green Line is experiencing delays due to a signal failure near Boylston station.',
         "location": locations[0],
-        'line': 'green'
-},
+        'line': 'Green'
+    },
     {
-        'category': 'outage',
-        'description': 'is this thing on',
+        'category': 'Outage',
+        'description': 'Red Line service is suspended between South Station and Downtown Crossing for emergency track repairs.',
         "location": locations[1],
-        'line': 'red'
+        'line': 'Red'
     },
     {
-        'category': 'delay',
-        'description': 'portal to hell opened under city hall',
+        'category': 'Delay',
+        'description': 'Orange Line is operating at reduced frequency due to a mechanical issue on the route.',
         "location": locations[2],
-        'line': 'red'
+        'line': 'Orange'
     },
     {
-        'category': 'outage',
-        'description': 'the entire city lost power',
+        'category': 'Outage',
+        'description': 'Blue Line service is currently halted due to a power outage affecting several stations.',
         "location": locations[3],
-        'line': 'orange'
+        'line': 'Blue'
     },
     {
-        'category': 'delay',
-        'description': 'the 7 trumpets sounded',
+        'category': 'Delay',
+        'description': 'Orange line is experiencing minor delays due to inclement weather conditions.',
         "location": locations[4],
-        'line': 'blue'
+        'line': 'Orange'
     }
 ]
 

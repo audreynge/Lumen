@@ -34,7 +34,7 @@ def add_service_issue():
         'mongodb://localhost:27017'
     )
 
-    db = client['mbta']
+    db = client['issues']
     col = db['service_issues']
 
     location = {
@@ -68,7 +68,7 @@ def find_nearby_issues():
         'mongodb://localhost:27017'
     )
 
-    db = client['mbta']
+    db = client['issues']
     col = db['service_issues']
 
     center_latitude = float(request.args.get('latitude'))  # Example: New York City

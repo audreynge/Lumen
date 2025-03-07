@@ -6,35 +6,12 @@ import IssueForm from "../components/IssueForm";
 import IssueMap from "../components/IssueMap";
 import RouteForm from "../components/RouteForm";
 
-const apiKey = process.env.REACT_APP_OPENAI_API_KEY;
-console.log(apiKey);
-
 const Home = () => {
   const [showIssueForm, setShowIssueForm] = useState(false);
   const [issueFormData, setIssueFormData] = useState(null);
   const [showRouteForm, setShowRouteForm] = useState(false);
   const [routeFormData, setRouteFormData] = useState(null);
   const [mapLoaded, setMapLoaded] = useState(false);
-
-  // const postData = async (formData) => {
-  //   try {
-  //     const queryParams = new URLSearchParams(formData).toString();
-  //     const url = `http://127.0.0.1:5000/issue?${queryParams}`;
-  
-  //     const response = await fetch(url, {
-  //       method: 'POST',
-  //     });
-  
-  //     if (!response.ok) {
-  //       throw new Error(`Error: ${response.statusText}`);
-  //     }
-  
-  //     const data = await response.json();
-  //     console.log('Issue successfully submitted:', data);
-  //   } catch (error) {
-  //     console.error('Error submitting issue:', error);
-  //   }
-  // };
 
   const handleIssueSubmit = (data) => {
     // postData(data);
@@ -46,7 +23,6 @@ const Home = () => {
   const handleIssueCancel = () => {
     setShowIssueForm(false);
   };
-
 
   const handleRouteSubmit = (data) => {
     console.log("Form submitted:", data);
