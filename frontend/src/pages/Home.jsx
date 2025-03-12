@@ -3,8 +3,11 @@ import React, { useState, useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import IssueForm from "../components/IssueForm";
-import IssueMap from "../components/IssueMap";
-import RouteForm from "../components/RouteForm";
+
+import dynamic from "next/dynamic";
+
+const IssueMap = dynamic(() => import("../components/IssueMap"), { ssr: false });
+const RouteForm = dynamic(() => import("../components/RouteForm"), { ssr: false });
 
 const Home = () => {
   const [showIssueForm, setShowIssueForm] = useState(false);
