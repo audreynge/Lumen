@@ -15,7 +15,7 @@ const Header = () => {
               href="#mbta-issues"
               className="font-roboto hover:text-gray-200"
             >
-              MBTA Issues
+              Issues
             </a>
             <a href="#map" className="font-roboto hover:text-gray-200">
               Map

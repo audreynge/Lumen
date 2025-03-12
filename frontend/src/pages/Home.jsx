@@ -93,7 +93,7 @@ const Home = () => {
       <section id="mbta-issues" className="py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-roboto text-3xl font-bold mb-8">
-            MBTA Issues
+            Issues
           </h2>
           {!mapLoaded ? (
             <div className="h-[600px] flex items-center justify-center">
