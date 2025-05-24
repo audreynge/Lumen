@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import Header from "../../components/Header";
+import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
 const RoutePage = () => {
@@ -104,7 +104,7 @@ const RoutePage = () => {
 
   return (
     <>
-      <Header />
+      <Navbar />
       <div className="max-w-4xl mx-auto p-4">
         <h1 className="text-xl font-bold mb-4">Your Optimized Route</h1>
         <div className="flex flex-col md:flex-row gap-4">
