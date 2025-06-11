@@ -1,0 +1,2063 @@
+HOUR_OF_DAY,DAY_OF_WEEK,YEAR,QUARTER,MONTH,NEIGHBORHOOD
+13,5,2015,1,1,Dorchester
+1,1,2015,1,1,Hyde Park
+18,1,2015,1,1,Roslindale
+22,5,2015,1,1,Roxbury
+22,5,2015,1,1,Roxbury
+22,5,2015,1,1,Roxbury
+22,5,2015,1,1,Roxbury
+23,2,2015,1,1,Dorchester
+2,6,2015,1,1,Mattapan
+23,3,2015,1,1,Jamaica Plain
+11,3,2015,1,1,Longwood
+1,5,2015,1,1,Mission Hill
+19,5,2015,1,1,Roxbury
+19,5,2015,1,1,Roxbury
+12,2,2015,1,1,Roxbury
+23,6,2015,1,1,Jamaica Plain
+23,6,2015,1,1,Jamaica Plain
+23,6,2015,1,1,Jamaica Plain
+23,6,2015,1,1,Jamaica Plain
+23,6,2015,1,1,Jamaica Plain
+23,6,2015,1,1,Jamaica Plain
+19,4,2015,1,2,Roxbury
+19,1,2015,1,2,Mattapan
+20,3,2015,1,2,Dorchester
+10,4,2015,1,2,Jamaica Plain
+22,1,2015,1,3,Dorchester
+19,3,2015,1,3,Roxbury
+2,7,2015,1,3,South End
+18,4,2015,1,3,Dorchester
+0,5,2015,1,3,Dorchester
+18,6,2015,1,3,Dorchester
+20,6,2015,1,3,Dorchester
+21,7,2015,1,3,Hyde Park
+3,1,2015,1,3,Hyde Park
+3,1,2015,1,3,Hyde Park
+15,7,2015,1,3,Roxbury
+12,4,2015,1,3,Roxbury
+22,2,2015,1,3,East Boston
+20,7,2015,1,3,Dorchester
+14,6,2015,1,3,Mission Hill
+18,6,2015,1,3,Roxbury
+10,6,2015,1,3,Roxbury
+11,3,2015,1,3,Dorchester
+11,3,2015,1,3,Dorchester
+20,4,2015,2,4,Dorchester
+23,6,2015,2,4,Roxbury
+23,6,2015,2,4,Roxbury
+21,2,2015,2,4,Roxbury
+20,4,2015,2,4,Dorchester
+20,4,2015,2,4,Dorchester
+15,5,2015,2,4,Roxbury
+21,1,2015,2,4,Dorchester
+21,1,2015,2,4,Dorchester
+23,6,2015,2,4,Mattapan
+10,2,2015,2,4,Roxbury
+17,3,2015,2,4,Mattapan
+15,7,2015,2,5,Roxbury
+19,1,2015,2,5,Dorchester
+20,1,2015,2,5,Dorchester
+4,3,2015,2,5,Roslindale
+13,1,2015,2,5,Roxbury
+11,6,2015,2,5,Dorchester
+4,5,2015,2,5,Roxbury
+13,5,2015,2,5,Dorchester
+18,3,2015,2,5,Roxbury
+23,6,2015,2,5,Dorchester
+21,2,2015,2,5,Hyde Park
+11,4,2015,2,5,Hyde Park
+17,5,2015,2,5,Dorchester
+21,5,2015,2,5,Mattapan
+0,7,2015,2,5,Roxbury
+16,1,2015,2,5,Dorchester
+16,1,2015,2,5,Dorchester
+16,1,2015,2,5,Dorchester
+1,2,2015,2,5,Jamaica Plain
+13,3,2015,2,5,Dorchester
+19,7,2015,2,5,Dorchester
+2,7,2015,2,5,Downtown
+18,6,2015,2,5,East Boston
+14,2,2015,2,6,Dorchester
+5,4,2015,2,6,Dorchester
+23,4,2015,2,6,Dorchester
+23,4,2015,2,6,Dorchester
+19,4,2015,2,6,Dorchester
+4,6,2015,2,6,Roxbury
+0,7,2015,2,6,Dorchester
+20,7,2015,2,6,Jamaica Plain
+20,3,2015,2,6,Dorchester
+20,3,2015,2,6,Dorchester
+20,3,2015,2,6,Dorchester
+21,6,2015,2,6,Roxbury
+16,7,2015,2,6,Dorchester
+19,4,2015,2,6,Dorchester
+2,6,2015,2,6,Roxbury
+18,5,2015,2,6,Dorchester
+23,7,2015,2,6,Dorchester
+19,7,2015,2,6,Dorchester
+22,7,2015,2,6,Jamaica Plain
+14,4,2015,3,7,Mattapan
+23,5,2015,3,7,Roxbury
+23,5,2015,3,7,Roxbury
+18,5,2015,3,7,Dorchester
+18,5,2015,3,7,Dorchester
+1,7,2015,3,7,Dorchester
+1,7,2015,3,7,Dorchester
+2,7,2015,3,7,Jamaica Plain
+22,7,2015,3,7,Roxbury
+22,7,2015,3,7,Roxbury
+0,1,2015,3,7,Roxbury
+0,1,2015,3,7,Roxbury
+3,7,2015,3,7,Roxbury
+23,1,2015,3,7,Roxbury
+3,2,2015,3,7,South Boston
+17,4,2015,3,7,Roxbury
+17,7,2015,3,7,Dorchester
+22,7,2015,3,7,Mattapan
+22,7,2015,3,7,Roxbury
+16,1,2015,3,7,Dorchester
+12,2,2015,3,7,Roxbury
+23,1,2015,3,7,Dorchester
+23,1,2015,3,7,Dorchester
+18,3,2015,3,7,Dorchester
+20,6,2015,3,7,Jamaica Plain
+23,6,2015,3,7,Dorchester
+23,6,2015,3,7,Dorchester
+0,1,2015,3,7,Dorchester
+23,2,2015,3,7,Roxbury
+10,2,2015,3,7,Roslindale
+18,4,2015,3,7,Dorchester
+1,6,2015,3,7,Jamaica Plain
+15,7,2015,3,7,Roxbury
+15,7,2015,3,7,Roxbury
+22,3,2015,3,7,Dorchester
+0,2,2015,3,7,Mattapan
+0,2,2015,3,7,Mattapan
+0,2,2015,3,7,Mattapan
+23,5,2015,3,7,Mission Hill
+23,5,2015,3,7,Mission Hill
+21,4,2015,3,7,Roxbury
+21,4,2015,3,7,Roxbury
+23,1,2015,3,8,Jamaica Plain
+18,7,2015,3,8,Roxbury
+3,1,2015,3,8,Dorchester
+12,2,2015,3,8,Roxbury
+12,2,2015,3,8,Roxbury
+12,2,2015,3,8,Roxbury
+2,7,2015,3,8,Mission Hill
+0,7,2015,3,8,Mattapan
+1,1,2015,3,8,Roxbury
+22,4,2015,3,8,Jamaica Plain
+22,4,2015,3,8,Jamaica Plain
+12,4,2015,3,8,Jamaica Plain
+22,4,2015,3,8,Mattapan
+22,4,2015,3,8,Mattapan
+22,4,2015,3,8,Mattapan
+23,5,2015,3,8,Dorchester
+23,5,2015,3,8,Dorchester
+16,5,2015,3,8,Dorchester
+0,3,2015,3,8,Dorchester
+12,1,2015,3,8,South Boston
+0,7,2015,3,8,Jamaica Plain
+0,7,2015,3,8,Jamaica Plain
+21,6,2015,3,8,Dorchester
+1,5,2015,3,8,Jamaica Plain
+15,5,2015,3,8,West Roxbury
+1,1,2015,3,8,Dorchester
+0,2,2015,3,8,Roxbury
+21,2,2015,3,8,Dorchester
+2,7,2015,3,8,Dorchester
+2,7,2015,3,8,Dorchester
+2,7,2015,3,8,Dorchester
+2,7,2015,3,8,Dorchester
+1,7,2015,3,8,Mattapan
+2,7,2015,3,8,Dorchester
+1,1,2015,3,9,Dorchester
+1,1,2015,3,9,Fenway
+1,1,2015,3,9,Fenway
+4,5,2015,3,9,Roxbury
+22,7,2015,3,9,Roslindale
+12,4,2015,3,9,Mission Hill
+0,2,2015,3,9,Jamaica Plain
+16,3,2015,3,9,Fenway
+20,4,2015,3,9,Dorchester
+1,6,2015,3,9,Hyde Park
+1,7,2015,3,9,Dorchester
+4,2,2015,3,9,Dorchester
+20,2,2015,3,9,Roxbury
+4,4,2015,3,9,Hyde Park
+22,4,2015,3,9,East Boston
+23,6,2015,3,7,Roxbury
+23,1,2015,2,5,Mission Hill
+23,2,2015,2,5,Dorchester
+20,7,2023,3,8,Dorchester
+7,7,2023,3,8,Dorchester
+11,7,2022,3,7,Fenway
+19,4,2022,3,7,Dorchester
+22,1,2022,3,7,Roxbury
+22,1,2022,3,7,Roxbury
+23,7,2022,3,7,Dorchester
+23,7,2022,3,7,Dorchester
+23,7,2022,3,7,Dorchester
+12,2,2022,3,8,Dorchester
+2,7,2022,3,8,East Boston
+20,5,2022,3,8,Mattapan
+22,7,2022,3,8,South End
+1,1,2022,3,8,Dorchester
+23,7,2022,3,8,Roxbury
+0,2,2022,3,8,Dorchester
+4,5,2022,3,8,Roxbury
+4,5,2022,3,8,Roxbury
+5,2,2022,3,8,Dorchester
+20,1,2022,3,8,Dorchester
+19,7,2022,3,8,Dorchester
+3,7,2022,3,8,Dorchester
+0,7,2022,3,8,South Boston
+6,7,2022,3,8,Dorchester
+15,7,2022,3,8,Jamaica Plain
+17,1,2022,3,8,Dorchester
+13,7,2022,3,8,Dorchester
+2,1,2022,3,9,Dorchester
+2,1,2022,3,9,Dorchester
+1,1,2022,3,9,Dorchester
+8,7,2022,3,8,Roxbury
+16,5,2022,3,9,Roxbury
+17,4,2022,3,8,Dorchester
+20,4,2022,3,8,Roxbury
+19,4,2022,3,8,Mattapan
+14,1,2022,3,9,Dorchester
+13,4,2022,3,9,Mattapan
+23,6,2022,3,9,Dorchester
+23,6,2022,3,9,Dorchester
+23,5,2022,3,9,Roxbury
+18,5,2022,3,9,Roxbury
+1,2,2022,4,10,South End
+0,3,2022,4,10,Dorchester
+9,3,2022,4,10,Dorchester
+0,3,2022,4,10,Dorchester
+23,1,2022,4,10,Roslindale
+6,2,2022,4,10,Jamaica Plain
+12,2,2022,4,10,Roxbury
+12,2,2022,4,10,Roxbury
+0,2,2022,4,10,Hyde Park
+20,1,2022,4,10,Dorchester
+20,1,2022,4,10,Dorchester
+20,1,2022,4,10,Dorchester
+19,4,2022,4,10,Roxbury
+4,1,2022,4,10,Mattapan
+1,7,2022,4,10,Dorchester
+3,7,2022,4,10,Hyde Park
+22,1,2022,4,10,Dorchester
+19,4,2022,4,10,Dorchester
+5,1,2022,4,10,Dorchester
+5,1,2022,4,10,Dorchester
+5,1,2022,4,10,Dorchester
+22,7,2022,4,10,Dorchester
+21,1,2022,4,11,Hyde Park
+21,1,2022,4,11,Hyde Park
+21,1,2022,4,11,Hyde Park
+21,1,2022,4,11,Mattapan
+21,1,2022,4,11,Mattapan
+21,1,2022,4,11,Dorchester
+22,6,2022,4,11,South End
+13,4,2022,4,11,Dorchester
+20,5,2022,4,11,Dorchester
+18,7,2022,4,11,Hyde Park
+11,1,2022,4,11,Charlestown
+17,7,2022,4,11,Mattapan
+22,1,2022,4,11,Dorchester
+20,6,2022,4,12,Hyde Park
+15,2,2022,4,12,Dorchester
+15,2,2022,4,12,Dorchester
+19,1,2022,4,12,Dorchester
+2,1,2022,4,12,Allston
+2,1,2022,4,12,Jamaica Plain
+17,7,2022,4,12,Jamaica Plain
+23,4,2022,4,12,Roxbury
+13,5,2022,4,12,Jamaica Plain
+23,6,2022,4,12,Dorchester
+5,1,2023,1,1,Mattapan
+5,1,2023,1,1,Mattapan
+18,5,2023,1,1,Roslindale
+1,4,2023,1,1,Roxbury
+1,4,2023,1,1,Roxbury
+17,1,2023,1,1,South Boston
+19,7,2023,1,1,Dorchester
+21,6,2023,1,1,Dorchester
+12,6,2023,1,1,Roslindale
+17,5,2023,1,1,Dorchester
+17,5,2023,1,1,Dorchester
+11,1,2023,1,1,Mattapan
+2,7,2023,1,1,Dorchester
+17,2,2023,1,1,Mission Hill
+23,6,2023,1,2,East Boston
+20,2,2023,1,2,Roxbury
+20,2,2023,1,2,Roxbury
+18,5,2023,1,2,Roxbury
+21,7,2023,1,2,Dorchester
+23,1,2023,1,2,Roxbury
+23,1,2023,1,2,Roxbury
+10,7,2023,1,2,Dorchester
+19,3,2023,1,2,Dorchester
+19,3,2023,1,2,Dorchester
+15,7,2023,1,3,Roxbury
+21,6,2023,1,3,South Boston
+23,1,2023,1,3,Jamaica Plain
+0,4,2023,3,7,Roxbury
+23,4,2020,2,5,Dorchester
+23,4,2020,2,5,Dorchester
+23,4,2020,2,5,Dorchester
+23,4,2020,2,5,Dorchester
+0,5,2020,2,5,South Boston
+21,1,2020,2,5,Roxbury
+2,7,2020,2,5,Dorchester
+21,2,2020,2,6,Mattapan
+15,2,2020,2,6,Dorchester
+21,3,2020,2,6,Dorchester
+21,3,2020,2,6,South End
+2,5,2020,2,6,Dorchester
+2,5,2020,2,6,Dorchester
+22,4,2020,2,6,Dorchester
+23,7,2020,2,6,Dorchester
+23,6,2020,2,6,Roxbury
+23,6,2020,2,6,Roxbury
+23,6,2020,2,6,Roxbury
+22,6,2020,2,6,Dorchester
+15,2,2020,2,6,Roxbury
+23,3,2020,2,6,South End
+22,4,2020,2,6,Dorchester
+22,4,2020,2,6,Dorchester
+15,7,2020,2,6,Dorchester
+22,7,2020,2,6,Roxbury
+21,7,2020,2,6,Dorchester
+13,7,2020,2,6,Mattapan
+1,7,2020,2,6,Roxbury
+22,2,2020,2,6,Roslindale
+15,5,2020,2,6,Roxbury
+15,5,2020,2,6,Roxbury
+22,6,2020,2,6,East Boston
+2,3,2020,2,6,East Boston
+1,3,2020,2,6,Dorchester
+22,4,2020,2,6,East Boston
+10,4,2020,2,6,East Boston
+16,1,2020,2,6,Roxbury
+17,6,2020,2,6,Roslindale
+18,2,2020,2,6,Roxbury
+12,2,2020,2,6,Dorchester
+19,3,2020,2,6,Roxbury
+19,3,2020,2,6,Roxbury
+19,3,2020,2,6,Roxbury
+0,4,2020,3,7,Roxbury
+21,3,2020,2,6,Dorchester
+22,4,2020,3,7,Dorchester
+0,5,2020,3,7,Dorchester
+0,5,2020,3,7,Hyde Park
+22,5,2020,3,7,Roxbury
+22,5,2020,3,7,Roxbury
+22,5,2020,3,7,Roxbury
+3,1,2020,3,7,Dorchester
+20,5,2020,3,7,Mattapan
+0,7,2020,3,7,Dorchester
+0,1,2020,3,7,South End
+1,1,2020,3,7,Mattapan
+2,1,2020,3,7,Roxbury
+23,6,2020,3,7,Roxbury
+21,7,2020,3,7,Roxbury
+21,7,2020,3,7,Roxbury
+0,6,2020,3,7,Dorchester
+11,6,2020,3,7,Dorchester
+21,5,2020,3,7,Dorchester
+21,5,2020,3,7,Dorchester
+21,5,2020,3,7,Jamaica Plain
+13,5,2020,3,7,South Boston
+1,1,2020,3,7,Mattapan
+0,1,2020,3,7,Roxbury
+4,2,2020,3,7,Roxbury
+22,1,2020,3,7,Dorchester
+18,2,2020,3,7,Mattapan
+21,3,2020,3,7,Roxbury
+23,1,2020,3,7,Roxbury
+16,1,2020,3,7,Dorchester
+16,1,2020,3,7,Dorchester
+2,7,2020,3,7,Dorchester
+23,6,2020,3,7,Dorchester
+1,3,2020,3,7,Roxbury
+20,3,2020,3,7,Dorchester
+17,4,2020,3,7,Roxbury
+17,4,2020,3,7,Roxbury
+2,1,2020,3,7,Jamaica Plain
+2,1,2020,3,7,Jamaica Plain
+2,1,2020,3,7,Dorchester
+1,1,2020,3,7,Dorchester
+0,7,2020,3,7,Dorchester
+20,2,2020,3,7,Dorchester
+23,4,2020,3,7,Dorchester
+22,4,2020,3,7,Dorchester
+2,5,2020,3,7,Jamaica Plain
+3,5,2020,3,7,Mission Hill
+21,1,2020,3,8,Dorchester
+17,7,2020,3,8,Dorchester
+1,1,2020,3,8,Roxbury
+19,6,2020,3,7,Roslindale
+12,3,2020,3,8,Roxbury
+21,5,2020,3,8,Mattapan
+2,1,2020,3,8,Dorchester
+1,1,2020,3,8,Mattapan
+23,7,2020,3,8,Roxbury
+23,7,2020,3,8,Roxbury
+2,3,2020,3,8,South Boston
+13,2,2020,3,8,Jamaica Plain
+0,1,2020,3,8,Hyde Park
+20,7,2020,3,8,Roxbury
+22,6,2020,3,8,Dorchester
+0,6,2020,3,8,Dorchester
+11,6,2020,3,8,Dorchester
+2,1,2020,3,8,Dorchester
+20,2,2020,3,8,Mattapan
+16,4,2020,3,8,Roxbury
+22,4,2020,3,8,Dorchester
+23,5,2020,3,8,Hyde Park
+2,1,2020,3,8,Dorchester
+22,1,2020,3,8,East Boston
+0,2,2020,3,8,Roslindale
+0,2,2020,3,8,Roslindale
+0,2,2020,3,8,Dorchester
+17,7,2020,3,9,Dorchester
+23,6,2020,3,9,Dorchester
+14,7,2020,3,9,Hyde Park
+20,7,2020,3,9,Roxbury
+22,7,2020,3,9,Dorchester
+22,7,2020,3,9,Dorchester
+0,1,2020,3,9,Hyde Park
+1,1,2020,3,9,Dorchester
+15,1,2020,3,9,Dorchester
+16,2,2020,3,9,Mission Hill
+23,2,2020,3,9,South Boston
+0,3,2020,3,9,Dorchester
+19,5,2020,3,9,Charlestown
+19,5,2020,3,9,Charlestown
+20,2,2020,3,9,Roslindale
+19,6,2020,3,9,Roxbury
+19,6,2020,3,9,Roxbury
+19,6,2020,3,9,Roxbury
+14,6,2020,3,9,Dorchester
+19,6,2020,3,9,Brighton
+21,7,2020,3,9,South End
+20,3,2020,3,9,Hyde Park
+22,4,2020,3,9,Hyde Park
+22,5,2020,3,9,Dorchester
+1,6,2020,3,9,South Boston
+1,1,2020,3,9,Dorchester
+1,7,2020,3,9,Dorchester
+23,3,2020,3,9,West Roxbury
+14,3,2020,3,9,Dorchester
+20,1,2020,4,10,Roslindale
+2,5,2020,4,10,Dorchester
+12,6,2020,4,10,Dorchester
+23,7,2020,4,10,Dorchester
+21,3,2020,4,10,Dorchester
+17,4,2020,4,10,Dorchester
+15,6,2020,4,10,Dorchester
+20,3,2020,4,10,Roxbury
+18,4,2020,4,10,Jamaica Plain
+22,5,2020,4,10,Dorchester
+22,5,2020,4,10,Dorchester
+22,5,2020,4,10,Dorchester
+22,5,2020,4,10,Dorchester
+0,1,2020,4,10,Roxbury
+1,1,2020,4,10,Dorchester
+10,6,2020,4,10,Mission Hill
+14,3,2020,4,10,Roxbury
+21,3,2020,4,10,Mattapan
+2,1,2020,4,11,Hyde Park
+15,3,2020,4,10,Back Bay
+3,4,2020,4,11,Dorchester
+19,3,2020,4,11,South Boston
+18,6,2015,4,10,Dorchester
+14,3,2020,4,11,Roxbury
+23,5,2020,4,11,Mission Hill
+0,1,2020,4,11,Dorchester
+0,1,2020,4,11,Dorchester
+0,1,2020,4,11,Dorchester
+23,6,2020,4,11,Jamaica Plain
+23,6,2020,4,11,Jamaica Plain
+23,6,2020,4,11,Jamaica Plain
+0,2,2020,4,11,Brighton
+0,2,2020,4,11,Brighton
+0,2,2020,4,11,Brighton
+21,1,2020,4,11,Mattapan
+21,1,2020,4,11,Mattapan
+0,7,2020,4,11,Dorchester
+0,7,2020,4,11,Roxbury
+19,1,2020,4,11,Roxbury
+19,5,2020,4,11,Roslindale
+22,1,2020,4,11,Mattapan
+22,2,2020,4,11,Hyde Park
+20,1,2020,4,11,Jamaica Plain
+17,7,2020,4,11,Dorchester
+23,4,2020,4,11,Roxbury
+23,5,2020,4,11,Mission Hill
+13,2,2020,4,11,Dorchester
+20,3,2020,4,12,Dorchester
+2,6,2020,4,12,Dorchester
+19,7,2020,4,12,Dorchester
+14,7,2020,4,12,Dorchester
+17,6,2020,4,12,East Boston
+3,4,2020,4,12,Dorchester
+23,4,2020,4,12,Hyde Park
+22,5,2020,4,12,Dorchester
+0,6,2020,4,12,Dorchester
+19,1,2020,4,12,Hyde Park
+16,4,2020,4,12,Dorchester
+18,3,2020,4,12,Roslindale
+18,3,2020,4,12,Roslindale
+1,1,2020,4,12,Mattapan
+17,6,2021,1,1,Dorchester
+12,6,2021,1,1,Hyde Park
+4,6,2021,1,1,Mattapan
+12,4,2021,1,1,Mattapan
+21,5,2021,1,1,Dorchester
+18,6,2021,1,1,Dorchester
+18,1,2021,1,1,Dorchester
+12,6,2021,1,1,Dorchester
+22,5,2021,1,2,Dorchester
+22,7,2021,1,2,Jamaica Plain
+20,4,2021,1,2,Roxbury
+0,5,2021,1,2,Roxbury
+19,7,2021,1,2,Jamaica Plain
+2,1,2021,1,2,Hyde Park
+14,1,2021,1,2,Roxbury
+18,5,2021,1,2,Dorchester
+21,5,2021,1,3,Dorchester
+20,1,2021,1,3,Roxbury
+21,2,2021,1,3,South Boston
+14,5,2021,1,3,Hyde Park
+0,6,2021,1,3,Roxbury
+16,7,2021,1,3,Dorchester
+3,7,2021,1,3,Charlestown
+17,2,2021,1,3,Dorchester
+4,1,2021,1,3,South Boston
+17,5,2021,1,3,Dorchester
+1,4,2021,1,3,Dorchester
+12,3,2021,1,3,Dorchester
+0,5,2021,2,4,Mattapan
+1,7,2021,2,4,Dorchester
+17,7,2021,2,4,Dorchester
+21,6,2021,2,4,Roxbury
+21,6,2021,2,4,Roxbury
+20,2,2021,2,4,Roxbury
+19,3,2021,2,4,Dorchester
+18,4,2021,2,4,Dorchester
+13,5,2021,2,4,Dorchester
+19,6,2021,2,4,Roxbury
+18,2,2021,2,4,Hyde Park
+21,2,2021,2,4,South Boston
+18,3,2021,2,4,South Boston
+0,6,2021,2,4,Dorchester
+21,1,2021,2,4,Dorchester
+0,1,2021,2,4,Dorchester
+0,1,2021,2,4,Dorchester
+21,7,2021,2,4,Mattapan
+1,1,2021,2,4,Dorchester
+18,4,2021,2,4,Dorchester
+19,1,2021,2,5,Dorchester
+1,5,2021,2,5,Roxbury
+21,6,2021,2,5,Dorchester
+21,6,2021,2,5,Roxbury
+22,6,2021,2,5,Dorchester
+13,6,2021,2,5,Mattapan
+19,2,2021,2,5,Mattapan
+20,3,2021,2,5,Mission Hill
+22,7,2021,2,5,Dorchester
+16,1,2021,2,5,Roxbury
+13,6,2021,2,5,Downtown
+22,1,2021,2,5,Dorchester
+22,1,2021,2,5,Dorchester
+22,1,2021,2,5,Dorchester
+22,2,2021,2,5,Dorchester
+16,2,2021,2,5,Dorchester
+2,6,2021,2,5,Mattapan
+23,6,2021,2,5,Dorchester
+2,4,2021,2,6,Roxbury
+16,4,2021,2,6,Dorchester
+23,6,2021,2,6,Dorchester
+23,1,2021,2,6,South End
+20,2,2021,2,6,Mission Hill
+15,3,2021,2,6,Mattapan
+16,3,2021,2,6,Mattapan
+20,3,2021,2,6,South Boston
+20,3,2021,2,6,South Boston
+1,5,2021,2,6,Dorchester
+20,6,2021,2,6,Roxbury
+13,2,2021,2,6,Mission Hill
+1,3,2021,2,6,Mattapan
+0,6,2021,2,6,Dorchester
+20,7,2021,2,6,Allston
+20,1,2021,2,6,Roxbury
+20,1,2021,2,6,Roxbury
+1,6,2021,2,6,Dorchester
+20,7,2021,2,6,Roxbury
+5,1,2021,2,6,Mattapan
+1,7,2021,2,6,Mattapan
+1,2,2021,2,6,Roxbury
+23,2,2021,2,6,Roxbury
+3,3,2021,2,6,Mattapan
+1,2,2021,3,7,Roxbury
+1,2,2021,3,7,Roxbury
+0,2,2021,3,7,Dorchester
+13,1,2021,3,7,Dorchester
+3,2,2021,3,7,Roxbury
+1,6,2021,3,7,South Boston
+21,6,2021,3,7,Roxbury
+21,6,2021,3,7,Roxbury
+21,6,2021,3,7,Roxbury
+20,1,2021,3,7,Mission Hill
+4,7,2021,3,7,Jamaica Plain
+18,7,2021,3,7,Dorchester
+18,7,2021,3,7,Dorchester
+11,7,2021,3,7,Dorchester
+18,7,2021,3,7,Dorchester
+18,7,2021,3,7,Dorchester
+21,5,2021,3,7,Jamaica Plain
+21,5,2021,3,7,Jamaica Plain
+21,5,2021,3,7,Jamaica Plain
+21,5,2021,3,7,Jamaica Plain
+2,1,2021,3,7,Dorchester
+18,7,2021,3,7,Dorchester
+18,7,2021,3,7,Dorchester
+17,2,2021,3,7,Mattapan
+23,3,2021,3,7,Roxbury
+22,7,2021,3,7,Dorchester
+23,3,2021,3,7,South Boston
+13,5,2021,3,7,Roslindale
+20,5,2021,3,7,Dorchester
+23,7,2021,3,7,Roxbury
+2,1,2021,3,8,Roxbury
+11,6,2021,3,7,Dorchester
+18,4,2021,3,8,Dorchester
+0,2,2021,3,8,Dorchester
+0,2,2021,3,8,Dorchester
+0,2,2021,3,8,Dorchester
+0,2,2021,3,8,Dorchester
+0,2,2021,3,8,Dorchester
+0,2,2021,3,8,Dorchester
+22,6,2021,3,8,Hyde Park
+3,7,2021,3,8,Mattapan
+3,7,2021,3,8,Mattapan
+15,7,2021,3,8,
+0,1,2021,3,8,Mattapan
+15,1,2021,3,8,Dorchester
+18,3,2021,3,8,Roxbury
+20,5,2021,3,8,Dorchester
+0,7,2021,3,8,Dorchester
+2,7,2021,3,8,Dorchester
+18,7,2021,3,8,Dorchester
+7,3,2021,3,8,Dorchester
+17,7,2021,3,9,Dorchester
+23,1,2021,3,9,Roxbury
+23,1,2021,3,9,Roxbury
+2,4,2021,3,9,Dorchester
+14,4,2021,3,9,Jamaica Plain
+22,4,2021,3,9,Mattapan
+19,6,2021,3,9,Roxbury
+23,5,2021,1,2,Downtown
+16,5,2021,3,9,Dorchester
+3,6,2021,3,9,Roxbury
+21,7,2021,3,9,Roxbury
+16,6,2021,3,9,Mattapan
+14,3,2021,3,9,Roxbury
+20,7,2021,3,9,Dorchester
+20,7,2021,3,9,Dorchester
+21,2,2021,3,9,Jamaica Plain
+21,2,2021,3,9,Jamaica Plain
+20,7,2021,4,10,Dorchester
+0,3,2021,4,10,Dorchester
+17,3,2021,4,10,Roxbury
+22,4,2021,4,10,Mattapan
+1,6,2021,4,10,Downtown
+14,1,2021,4,10,Hyde Park
+21,2,2021,4,10,Hyde Park
+21,3,2021,4,10,Roxbury
+18,1,2021,4,10,Roxbury
+23,2,2021,4,10,Roxbury
+15,7,2021,4,10,Jamaica Plain
+0,3,2021,4,10,Roslindale
+2,6,2021,4,10,Fenway
+2,6,2021,4,10,Fenway
+0,5,2021,4,11,Mattapan
+19,1,2021,4,11,Dorchester
+17,6,2021,4,11,Mattapan
+13,5,2021,4,11,Roxbury
+9,3,2021,4,11,Dorchester
+9,3,2021,4,11,Dorchester
+9,3,2021,4,11,Dorchester
+23,3,2021,4,11,Mattapan
+23,3,2021,4,11,Mattapan
+22,4,2021,4,11,Dorchester
+22,4,2021,4,11,Hyde Park
+0,2,2021,4,11,Allston
+0,2,2021,4,11,Allston
+22,7,2021,4,11,Dorchester
+19,3,2021,4,11,Dorchester
+22,1,2021,4,11,Dorchester
+18,2,2021,4,11,Dorchester
+13,3,2021,4,11,Roxbury
+21,2,2021,4,11,Hyde Park
+23,6,2021,4,12,Dorchester
+18,6,2021,4,12,Dorchester
+12,5,2021,4,12,East Boston
+1,1,2021,4,12,Dorchester
+14,2,2021,4,12,Roxbury
+14,2,2021,4,12,Roxbury
+4,7,2022,1,1,Roxbury
+18,1,2022,1,1,Dorchester
+18,1,2022,1,1,Dorchester
+18,1,2022,1,1,Dorchester
+18,1,2022,1,1,Dorchester
+20,2,2022,1,1,Roxbury
+20,2,2022,1,1,Roxbury
+20,2,2022,1,1,Roxbury
+22,3,2022,1,1,Dorchester
+18,3,2022,1,1,South Boston
+20,2,2022,1,1,East Boston
+1,3,2022,1,2,Dorchester
+23,7,2022,1,2,Mattapan
+23,7,2022,1,2,Mattapan
+22,7,2022,1,2,Dorchester
+0,2,2022,1,3,Dorchester
+16,2,2022,1,3,Brighton
+16,3,2022,1,3,East Boston
+22,4,2022,1,3,Dorchester
+17,3,2022,1,3,Dorchester
+17,3,2022,1,3,Dorchester
+0,7,2022,1,3,Dorchester
+2,2,2022,1,3,Mattapan
+2,4,2022,1,3,East Boston
+2,4,2022,1,3,East Boston
+0,7,2022,1,3,Charlestown
+2,2,2022,1,3,Hyde Park
+23,4,2022,1,3,Dorchester
+22,5,2022,1,3,Dorchester
+22,5,2022,1,3,Roxbury
+12,1,2022,2,4,Charlestown
+3,7,2022,2,4,Dorchester
+21,6,2022,2,4,Roslindale
+21,6,2022,2,4,Roslindale
+0,3,2022,2,4,South Boston
+0,3,2022,2,4,South Boston
+17,2,2022,2,4,Roxbury
+22,3,2022,2,4,Roxbury
+22,3,2022,2,4,Roxbury
+2,1,2022,2,4,Chinatown
+2,1,2022,2,4,Chinatown
+12,6,2022,2,4,Jamaica Plain
+0,6,2022,2,4,Dorchester
+5,7,2022,2,4,Mattapan
+11,4,2022,2,4,Roxbury
+23,6,2022,2,4,Dorchester
+15,1,2022,2,5,Fenway
+18,4,2022,2,5,Mission Hill
+21,7,2022,2,5,Roxbury
+18,7,2022,2,5,Dorchester
+20,4,2022,2,5,Dorchester
+20,4,2022,2,5,Dorchester
+3,7,2022,2,5,Jamaica Plain
+3,7,2022,2,5,Jamaica Plain
+17,7,2022,2,5,Roxbury
+23,3,2022,2,5,Jamaica Plain
+15,5,2022,2,5,Downtown
+21,1,2022,2,5,Dorchester
+0,1,2022,2,5,Mattapan
+23,5,2022,2,6,Dorchester
+0,6,2022,2,6,Dorchester
+0,6,2022,2,6,Dorchester
+21,1,2022,2,6,Roxbury
+22,6,2022,2,6,Dorchester
+1,2,2022,2,6,Roxbury
+18,3,2022,2,6,Dorchester
+22,4,2022,2,6,Roxbury
+3,7,2022,3,7,Hyde Park
+13,6,2022,3,7,Dorchester
+22,1,2022,3,7,Mattapan
+22,1,2022,3,7,Roxbury
+22,1,2022,3,7,Roxbury
+0,2,2022,3,7,Dorchester
+0,2,2022,3,7,Dorchester
+0,2,2022,3,7,Dorchester
+1,2,2022,3,7,South End
+1,2,2022,3,7,Hyde Park
+2,2,2022,3,7,Mattapan
+2,2,2022,3,7,Dorchester
+0,3,2022,3,7,Dorchester
+22,4,2022,3,7,Dorchester
+22,2,2022,3,7,Roxbury
+23,3,2022,3,7,Roxbury
+23,3,2022,3,7,Roxbury
+23,3,2022,3,7,Roxbury
+23,3,2022,3,7,Roxbury
+21,1,2022,3,7,Mattapan
+5,7,2022,3,7,South Boston
+22,1,2022,3,7,Roxbury
+0,3,2022,3,7,Dorchester
+23,3,2022,3,7,Dorchester
+20,3,2022,3,7,Roxbury
+22,5,2022,3,7,Mattapan
+21,1,2022,3,7,Dorchester
+1,1,2022,3,7,South End
+0,1,2022,3,7,Dorchester
+4,1,2015,4,10,Jamaica Plain
+2,4,2015,4,10,Roslindale
+23,1,2015,4,10,Roxbury
+11,5,2015,4,10,Brighton
+9,7,2015,4,10,Hyde Park
+15,4,2015,4,10,Roxbury
+16,1,2015,4,11,Dorchester
+17,7,2015,4,10,Dorchester
+0,3,2015,4,11,Dorchester
+0,1,2015,4,11,Roxbury
+16,7,2015,4,11,Dorchester
+16,7,2015,4,11,Dorchester
+15,7,2015,4,11,Dorchester
+17,6,2015,4,11,Jamaica Plain
+17,6,2015,4,11,Jamaica Plain
+22,7,2015,4,11,Hyde Park
+1,5,2015,4,11,Allston
+2,5,2015,4,11,Fenway
+2,5,2015,4,11,Fenway
+2,5,2015,4,11,Fenway
+2,5,2015,4,11,Fenway
+21,7,2015,4,11,Fenway
+15,1,2015,4,11,South End
+12,2,2015,4,11,Roxbury
+12,7,2015,4,12,Dorchester
+20,7,2015,4,12,South Boston
+23,7,2015,4,12,Roxbury
+1,4,2015,4,12,South End
+20,4,2015,4,12,Dorchester
+2,7,2015,4,12,Mattapan
+23,5,2015,4,10,Roxbury
+16,3,2015,4,12,Dorchester
+20,2,2015,4,12,Roxbury
+17,4,2015,4,12,Dorchester
+21,4,2015,4,12,Roxbury
+0,5,2015,4,12,Mission Hill
+2,5,2015,4,12,Dorchester
+16,6,2015,4,12,Mission Hill
+21,1,2015,4,12,Jamaica Plain
+21,2,2015,4,12,Roxbury
+18,4,2015,4,12,South End
+15,4,2015,4,12,Jamaica Plain
+15,4,2015,4,12,Jamaica Plain
+20,1,2015,4,12,Mattapan
+21,7,2015,4,12,South End
+20,7,2015,4,12,Charlestown
+19,7,2015,4,12,Dorchester
+17,6,2015,4,12,Roxbury
+8,3,2015,4,12,Mattapan
+8,3,2015,4,12,Mattapan
+22,4,2015,4,12,East Boston
+21,4,2015,4,12,Dorchester
+5,6,2016,1,1,Dorchester
+16,7,2016,1,1,Mattapan
+10,6,2016,1,1,Dorchester
+1,1,2016,1,1,East Boston
+19,4,2016,1,1,Mission Hill
+21,5,2016,1,1,Roxbury
+22,7,2016,1,1,Dorchester
+12,1,2016,1,1,Dorchester
+20,4,2016,1,1,Roxbury
+14,2,2016,1,1,Dorchester
+1,4,2016,1,1,Dorchester
+0,6,2016,1,1,Dorchester
+16,3,2016,1,2,Roxbury
+2,6,2016,1,2,Dorchester
+2,6,2016,1,2,Dorchester
+17,5,2016,1,2,Roxbury
+10,6,2016,1,2,Dorchester
+10,6,2016,1,2,Dorchester
+3,7,2016,1,2,Dorchester
+16,1,2016,1,2,Dorchester
+14,7,2016,1,3,Roxbury
+17,5,2016,1,3,Dorchester
+21,1,2016,1,3,Dorchester
+5,2,2016,1,3,Roxbury
+5,2,2016,1,3,Roxbury
+22,3,2016,1,3,East Boston
+23,3,2016,1,3,Jamaica Plain
+23,3,2016,1,3,Jamaica Plain
+2,1,2016,1,3,Mattapan
+3,5,2016,1,3,Dorchester
+13,5,2016,1,3,Dorchester
+14,4,2016,2,4,Mattapan
+22,4,2016,2,4,South Boston
+11,4,2016,2,4,Roxbury
+21,5,2016,2,4,Charlestown
+2,6,2016,2,4,Allston
+18,6,2016,2,4,Dorchester
+23,6,2016,2,4,Roslindale
+22,2,2016,2,4,Dorchester
+22,2,2016,2,4,Dorchester
+22,4,2016,2,4,Roxbury
+19,5,2016,2,4,Dorchester
+20,6,2016,2,4,Roslindale
+21,3,2016,2,5,Dorchester
+21,3,2016,2,5,Dorchester
+16,1,2016,2,5,Mattapan
+15,2,2016,2,5,Roxbury
+23,1,2016,2,5,Dorchester
+22,7,2016,2,5,Roxbury
+21,7,2016,2,5,Roxbury
+20,7,2016,2,5,Dorchester
+18,6,2016,2,5,Dorchester
+22,3,2016,2,5,South End
+21,5,2016,2,5,Dorchester
+17,5,2016,2,5,Dorchester
+23,4,2016,2,5,East Boston
+17,5,2016,2,5,Dorchester
+19,5,2016,2,5,Mattapan
+3,1,2016,2,5,Downtown
+23,7,2016,2,5,Mattapan
+1,7,2016,2,5,Dorchester
+10,1,2016,2,5,Dorchester
+3,5,2016,2,6,Dorchester
+0,5,2016,2,6,East Boston
+23,7,2016,2,6,Dorchester
+2,1,2016,2,6,Jamaica Plain
+3,7,2016,2,6,Dorchester
+23,6,2016,2,6,Dorchester
+21,6,2016,2,6,Mattapan
+0,1,2016,2,5,Mattapan
+13,4,2016,2,6,Dorchester
+13,4,2016,2,6,Dorchester
+13,4,2016,2,6,Dorchester
+13,4,2016,2,6,Dorchester
+12,3,2016,2,6,Mattapan
+16,3,2016,2,6,Dorchester
+0,3,2016,2,6,Dorchester
+23,7,2016,2,6,Mattapan
+23,7,2016,2,6,Mattapan
+0,1,2016,2,6,Dorchester
+0,1,2016,2,6,Dorchester
+22,2,2016,2,6,Mission Hill
+22,2,2016,2,6,Mission Hill
+23,2,2016,2,6,South Boston
+20,3,2016,2,6,Dorchester
+21,3,2016,2,6,Dorchester
+15,6,2016,2,6,Mattapan
+12,1,2016,2,6,Hyde Park
+0,7,2016,2,6,Roxbury
+23,3,2016,2,6,South Boston
+23,7,2016,3,7,Dorchester
+1,2,2016,3,7,South End
+0,3,2016,3,7,Roxbury
+0,3,2016,3,7,Roxbury
+0,3,2016,3,7,Roxbury
+23,5,2016,3,7,Dorchester
+23,5,2016,3,7,Dorchester
+0,7,2016,3,7,Dorchester
+15,1,2016,3,7,Dorchester
+23,1,2016,3,7,Dorchester
+17,2,2016,3,7,Mattapan
+23,2,2016,3,7,Dorchester
+23,2,2016,3,7,South Boston
+21,6,2016,3,7,Dorchester
+21,6,2016,3,7,Mattapan
+22,5,2016,3,7,Dorchester
+23,5,2016,3,7,Brighton
+0,3,2016,3,7,Roxbury
+23,2,2016,3,7,Dorchester
+23,2,2016,3,7,Dorchester
+0,4,2016,3,7,Mattapan
+0,4,2016,3,7,Mattapan
+0,4,2016,3,7,Mattapan
+17,7,2016,3,7,Roxbury
+22,7,2016,3,7,Dorchester
+3,1,2016,3,7,Dorchester
+3,1,2016,3,7,Dorchester
+0,6,2016,3,7,Dorchester
+11,3,2016,3,8,Roxbury
+23,6,2016,3,8,Dorchester
+23,5,2016,3,8,Roxbury
+23,2,2016,3,8,South Boston
+6,4,2016,3,8,Dorchester
+22,5,2016,3,8,Mattapan
+16,5,2016,3,8,Roslindale
+16,5,2016,3,8,Roslindale
+23,7,2016,3,8,Dorchester
+23,7,2016,3,8,Dorchester
+23,7,2016,3,8,Dorchester
+23,7,2016,3,8,Dorchester
+23,7,2016,3,8,Dorchester
+22,1,2016,3,8,Jamaica Plain
+0,7,2016,3,8,Dorchester
+0,7,2016,3,8,Dorchester
+3,7,2016,3,8,Jamaica Plain
+1,7,2016,3,8,Dorchester
+2,7,2016,3,8,Dorchester
+21,6,2016,3,8,Mattapan
+0,5,2016,3,8,Dorchester
+2,3,2016,3,8,Dorchester
+1,2,2016,3,9,Jamaica Plain
+8,7,2016,3,9,Roxbury
+21,6,2016,3,9,Roxbury
+21,3,2016,3,8,Dorchester
+2,2,2016,3,9,Roxbury
+22,5,2016,3,9,Roxbury
+19,4,2016,3,9,Dorchester
+0,7,2016,3,9,South End
+0,7,2016,3,9,South End
+23,7,2016,3,9,Dorchester
+16,3,2016,3,9,Roxbury
+18,7,2016,3,9,Dorchester
+2,7,2016,3,9,Dorchester
+2,7,2016,3,9,Dorchester
+2,7,2016,3,9,Dorchester
+22,1,2016,3,9,Allston
+20,3,2016,3,9,Dorchester
+20,3,2016,3,9,Roxbury
+20,3,2016,3,9,Roxbury
+21,4,2016,3,9,Mattapan
+16,5,2016,3,9,Roxbury
+14,1,2016,3,9,Back Bay
+0,3,2016,3,9,Jamaica Plain
+16,1,2016,4,10,Dorchester
+4,7,2016,4,10,Dorchester
+18,5,2016,4,10,Roxbury
+17,5,2016,4,10,Roxbury
+22,7,2016,4,10,Jamaica Plain
+1,1,2016,4,10,Mission Hill
+3,1,2016,4,10,Mattapan
+22,4,2016,4,10,East Boston
+22,4,2016,4,10,East Boston
+19,1,2016,4,10,Jamaica Plain
+15,7,2016,4,10,Roxbury
+20,2,2016,4,10,Dorchester
+17,3,2016,4,10,Dorchester
+22,4,2016,4,10,Roxbury
+15,5,2016,4,10,Roxbury
+14,7,2016,4,10,Dorchester
+11,1,2016,4,10,Hyde Park
+14,7,2016,4,10,Dorchester
+14,7,2016,4,10,Dorchester
+16,7,2016,4,10,Dorchester
+23,4,2016,4,10,Dorchester
+13,2,2016,4,10,Roxbury
+14,3,2016,4,11,Dorchester
+0,6,2016,4,11,Jamaica Plain
+23,5,2016,4,11,Dorchester
+10,7,2016,4,11,Roxbury
+0,7,2016,4,11,Dorchester
+1,7,2016,4,11,Dorchester
+19,1,2016,4,11,Roxbury
+2,2,2016,4,11,Dorchester
+22,3,2016,4,11,Mattapan
+16,7,2016,4,11,Dorchester
+16,7,2016,4,11,Dorchester
+17,7,2016,4,11,Mission Hill
+17,7,2016,4,11,Mission Hill
+17,6,2016,4,11,Roxbury
+14,2,2016,4,11,Dorchester
+23,2,2016,4,11,Dorchester
+12,3,2016,4,11,Mattapan
+2,7,2016,4,11,Longwood
+23,3,2016,4,11,Roxbury
+14,4,2016,4,11,Dorchester
+6,5,2016,4,12,Chinatown
+23,5,2016,4,12,Dorchester
+13,5,2016,4,12,Roxbury
+19,7,2016,4,12,Roxbury
+15,6,2016,4,12,Roxbury
+13,6,2016,4,12,Mattapan
+0,7,2016,4,12,Hyde Park
+4,6,2016,4,12,Jamaica Plain
+17,5,2016,4,12,Roxbury
+16,1,2016,4,12,Mission Hill
+16,1,2016,4,12,Mission Hill
+18,1,2016,4,12,Roxbury
+12,3,2016,4,12,Dorchester
+12,3,2016,4,12,Dorchester
+14,2,2016,4,12,Dorchester
+20,2,2016,4,12,Dorchester
+20,7,2016,4,12,Dorchester
+16,5,2016,4,12,Dorchester
+18,6,2016,4,12,Dorchester
+22,4,2016,4,12,Dorchester
+16,6,2016,4,12,Dorchester
+2,1,2017,1,1,Dorchester
+2,1,2017,1,1,Dorchester
+13,1,2017,1,1,Dorchester
+18,4,2017,1,1,Dorchester
+18,4,2017,1,1,Dorchester
+22,4,2017,1,1,Hyde Park
+19,2,2017,1,1,Roxbury
+22,3,2017,1,1,Jamaica Plain
+16,7,2017,1,1,Dorchester
+18,7,2017,1,1,Dorchester
+2,7,2017,1,1,Roxbury
+2,7,2017,1,1,Roxbury
+21,2,2017,1,1,Mattapan
+7,1,2017,1,1,Dorchester
+22,6,2017,1,1,Hyde Park
+6,2,2017,1,1,Dorchester
+18,2,2017,1,1,Roxbury
+17,1,2017,1,2,Dorchester
+0,7,2017,1,2,Dorchester
+20,3,2017,1,2,Mattapan
+14,2,2017,1,2,Mission Hill
+17,3,2017,1,2,Roxbury
+20,4,2017,1,2,Roxbury
+20,4,2017,1,2,Roxbury
+21,5,2017,1,2,Roxbury
+15,5,2017,1,2,Dorchester
+18,3,2017,1,2,Dorchester
+15,4,2017,1,3,Dorchester
+16,6,2017,1,3,Dorchester
+22,4,2017,1,3,Charlestown
+19,4,2017,1,3,Mattapan
+21,6,2017,1,3,Mattapan
+13,3,2017,1,3,Dorchester
+19,5,2017,1,3,Roxbury
+23,2,2017,2,4,Roxbury
+15,5,2017,2,4,Dorchester
+21,6,2017,2,4,Dorchester
+21,6,2017,2,4,Dorchester
+8,3,2017,2,4,Dorchester
+19,3,2017,2,4,South Boston
+19,4,2017,2,4,Dorchester
+19,4,2017,2,4,Hyde Park
+16,5,2017,2,4,Dorchester
+1,7,2017,2,4,Dorchester
+16,7,2017,2,4,Dorchester
+0,2,2017,2,4,Roxbury
+20,6,2017,2,4,Roxbury
+20,1,2017,2,4,Dorchester
+20,1,2017,2,4,Dorchester
+22,1,2017,2,4,Dorchester
+22,1,2017,2,4,Dorchester
+18,1,2017,2,4,Roxbury
+20,2,2017,2,4,Dorchester
+20,2,2017,2,4,Dorchester
+18,3,2017,2,4,Jamaica Plain
+0,1,2017,2,4,Jamaica Plain
+22,6,2017,2,4,Dorchester
+22,6,2017,2,4,Dorchester
+22,6,2017,2,4,Dorchester
+21,5,2017,2,4,Mattapan
+21,4,2017,2,5,Roxbury
+21,4,2017,2,5,Roxbury
+21,6,2017,2,5,Mattapan
+2,1,2017,2,5,Dorchester
+22,7,2017,2,5,Dorchester
+13,7,2017,2,5,Roxbury
+13,7,2017,2,5,Roxbury
+23,3,2017,2,5,South Boston
+22,3,2017,2,5,Mattapan
+22,1,2017,2,5,Roxbury
+20,1,2017,2,5,Dorchester
+20,7,2017,2,5,Dorchester
+1,5,2017,2,5,Dorchester
+22,3,2017,2,5,Roxbury
+22,6,2017,2,5,Dorchester
+2,7,2017,2,5,Chinatown
+15,5,2017,2,5,Dorchester
+14,7,2017,2,6,Dorchester
+18,7,2017,2,6,Mattapan
+17,6,2017,2,6,Dorchester
+17,6,2017,2,6,Dorchester
+21,4,2017,2,6,Roxbury
+22,4,2017,2,6,Roxbury
+22,4,2017,2,6,Dorchester
+22,4,2017,2,6,Dorchester
+1,5,2017,2,6,Roxbury
+12,1,2017,2,6,Dorchester
+1,7,2017,2,6,Roxbury
+0,7,2017,2,6,Mission Hill
+15,6,2017,2,6,Dorchester
+20,2,2017,2,6,Mattapan
+17,2,2017,2,6,Jamaica Plain
+18,3,2017,2,6,Mattapan
+18,4,2017,2,6,Jamaica Plain
+22,6,2017,2,6,Dorchester
+3,1,2017,2,6,Dorchester
+3,1,2017,2,6,Dorchester
+20,2,2017,2,6,Dorchester
+20,2,2017,2,6,Dorchester
+0,1,2017,2,6,Jamaica Plain
+0,1,2017,2,6,Roxbury
+16,7,2017,2,6,Dorchester
+19,2,2017,2,6,Mattapan
+16,2,2017,2,6,Dorchester
+9,4,2017,2,6,Dorchester
+2,5,2017,2,6,Dorchester
+0,6,2017,2,6,Jamaica Plain
+0,6,2017,2,6,Jamaica Plain
+20,5,2017,2,6,Dorchester
+20,5,2017,2,6,Dorchester
+23,1,2017,3,7,Roxbury
+23,1,2017,3,7,Roxbury
+23,1,2017,3,7,Roxbury
+23,1,2017,3,7,Mission Hill
+2,1,2017,3,7,Jamaica Plain
+15,7,2017,3,7,Roxbury
+2,4,2017,3,7,Roxbury
+16,3,2017,3,7,Dorchester
+9,3,2017,3,7,Roxbury
+1,3,2017,3,7,Mattapan
+23,2,2017,3,7,Roxbury
+23,2,2017,3,7,Roxbury
+23,2,2017,3,7,Roxbury
+0,5,2017,3,7,Dorchester
+18,5,2017,3,7,Dorchester
+18,5,2017,3,7,Dorchester
+10,5,2017,3,7,Dorchester
+22,6,2017,3,7,Dorchester
+21,2,2017,3,7,Dorchester
+19,2,2017,3,7,Dorchester
+19,3,2017,3,7,Dorchester
+12,4,2017,3,7,Dorchester
+22,7,2017,3,7,Roxbury
+8,1,2017,3,7,Dorchester
+22,1,2017,3,7,Dorchester
+22,5,2017,3,7,Dorchester
+23,2,2017,3,7,Roxbury
+17,2,2017,3,7,Dorchester
+17,2,2017,3,7,Dorchester
+1,2,2017,3,7,Jamaica Plain
+11,4,2017,3,7,Dorchester
+16,3,2017,3,7,Mission Hill
+16,5,2017,3,7,Roxbury
+19,1,2017,3,7,Mattapan
+21,7,2017,3,7,Roxbury
+18,7,2017,3,7,South Boston
+19,1,2017,3,7,Hyde Park
+16,4,2017,3,8,Dorchester
+22,1,2017,3,8,Roxbury
+19,2,2017,3,8,Dorchester
+22,4,2017,3,8,Dorchester
+22,4,2017,3,8,Dorchester
+23,1,2017,3,8,Roxbury
+23,1,2017,3,8,Roxbury
+13,1,2017,3,8,Dorchester
+23,7,2017,3,8,Roxbury
+15,6,2017,3,8,Dorchester
+15,5,2017,3,8,Jamaica Plain
+17,6,2017,3,8,Roxbury
+19,7,2017,3,8,Roslindale
+20,7,2017,3,8,Roxbury
+0,1,2017,3,8,Dorchester
+0,1,2017,3,8,Dorchester
+2,1,2017,3,8,Downtown
+2,1,2017,3,8,Downtown
+21,1,2017,3,8,Roxbury
+18,6,2017,3,9,Mattapan
+10,3,2017,3,9,Dorchester
+23,4,2017,3,9,Dorchester
+22,1,2017,3,9,Dorchester
+21,1,2017,3,9,Dorchester
+19,1,2017,3,9,Roxbury
+19,1,2017,3,9,Roxbury
+17,6,2017,3,9,Dorchester
+18,3,2017,3,9,Downtown
+21,3,2017,3,9,Roxbury
+23,6,2017,3,9,Mattapan
+1,6,2017,3,9,Dorchester
+21,7,2017,3,9,Roxbury
+19,6,2017,3,9,South Boston
+17,1,2017,3,9,Hyde Park
+13,2,2017,3,9,Roxbury
+6,1,2017,3,9,South Boston
+22,7,2017,3,9,Dorchester
+22,7,2017,3,9,Dorchester
+17,7,2017,3,9,Roxbury
+12,5,2017,3,9,Dorchester
+19,6,2017,3,9,Dorchester
+19,6,2017,3,9,Jamaica Plain
+0,7,2017,3,9,Roxbury
+0,7,2017,3,9,Roxbury
+23,7,2017,3,9,Dorchester
+16,1,2017,4,10,Dorchester
+21,1,2017,4,10,Dorchester
+2,3,2017,4,10,Back Bay
+22,2,2017,4,10,Dorchester
+22,7,2017,4,10,Roxbury
+21,1,2017,2,4,Roxbury
+1,5,2017,4,10,Roslindale
+2,7,2017,4,10,Jamaica Plain
+4,3,2017,4,10,Dorchester
+22,4,2017,4,10,Roxbury
+21,4,2017,4,10,Roxbury
+0,6,2017,4,10,Dorchester
+0,1,2017,4,10,East Boston
+20,1,2017,4,10,Dorchester
+18,6,2017,4,10,Mission Hill
+18,6,2017,4,10,Dorchester
+18,6,2017,4,10,Dorchester
+21,6,2017,4,10,Dorchester
+22,6,2017,4,10,Dorchester
+1,7,2017,4,10,Dorchester
+1,7,2017,4,10,Dorchester
+1,7,2017,4,10,Dorchester
+18,1,2017,4,10,Roxbury
+23,3,2017,4,10,Jamaica Plain
+20,2,2017,4,11,Fenway
+21,2,2017,4,11,Dorchester
+1,5,2017,4,11,Dorchester
+22,4,2017,4,11,Roslindale
+23,5,2017,4,11,Roslindale
+16,1,2017,4,11,Jamaica Plain
+20,7,2017,4,11,Hyde Park
+0,7,2017,4,11,Roslindale
+14,7,2017,4,11,Dorchester
+6,7,2017,4,11,Dorchester
+16,6,2017,4,11,Dorchester
+23,2,2017,4,11,South Boston
+23,2,2017,4,11,South Boston
+23,6,2017,4,12,Dorchester
+14,6,2017,4,12,Roxbury
+19,1,2017,4,12,Dorchester
+21,2,2017,4,12,Hyde Park
+13,5,2017,4,12,Mattapan
+17,5,2017,4,12,Mission Hill
+19,5,2017,4,12,Mattapan
+19,4,2017,4,12,Mission Hill
+19,4,2017,4,12,Mission Hill
+19,4,2017,4,12,Mission Hill
+16,1,2017,4,12,East Boston
+16,1,2017,4,12,East Boston
+0,7,2017,4,12,Roxbury
+20,7,2017,4,12,Roxbury
+17,7,2017,4,12,Brighton
+21,7,2017,4,12,Dorchester
+4,5,2017,4,12,Mattapan
+19,3,2017,4,12,Dorchester
+16,4,2017,4,12,Mission Hill
+16,4,2017,4,12,Mission Hill
+21,1,2017,4,12,Mattapan
+1,2,2017,4,12,Dorchester
+19,1,2017,4,12,Mission Hill
+19,1,2017,4,12,Mission Hill
+22,7,2017,4,12,South Boston
+19,7,2017,4,12,Hyde Park
+23,5,2017,4,12,Jamaica Plain
+23,5,2017,4,12,Jamaica Plain
+23,5,2017,4,12,Jamaica Plain
+19,7,2017,4,12,Dorchester
+21,2,2018,1,1,South Boston
+21,3,2018,1,1,Dorchester
+13,5,2018,1,1,Roxbury
+14,5,2018,1,1,Dorchester
+19,5,2018,1,1,Roxbury
+14,5,2018,1,1,Dorchester
+19,5,2018,1,1,Roxbury
+21,7,2018,1,1,Back Bay
+21,7,2018,1,1,Back Bay
+10,1,2018,1,1,Roxbury
+17,1,2018,1,1,Dorchester
+20,7,2018,1,1,Roxbury
+17,1,2018,1,1,Dorchester
+19,5,2018,1,1,Dorchester
+13,6,2018,1,1,Dorchester
+1,1,2018,1,1,Dorchester
+22,1,2018,1,1,Roxbury
+21,4,2018,1,1,Roxbury
+13,7,2018,1,2,Dorchester
+13,7,2018,1,2,Dorchester
+19,3,2018,1,2,Dorchester
+19,2,2018,1,2,Jamaica Plain
+18,4,2018,1,2,Roxbury
+23,2,2018,1,2,Brighton
+23,7,2018,1,2,Dorchester
+23,7,2018,1,2,Dorchester
+0,5,2018,1,2,South Boston
+4,4,2018,1,2,Jamaica Plain
+21,7,2018,1,2,Roxbury
+16,4,2018,1,3,Roxbury
+16,4,2018,1,3,Roxbury
+2,1,2018,1,3,Roxbury
+21,7,2018,1,3,Mattapan
+20,2,2018,1,3,Roxbury
+1,4,2018,1,3,Dorchester
+10,6,2018,1,3,Dorchester
+9,6,2018,1,3,Roxbury
+15,7,2018,1,3,Dorchester
+0,2,2018,2,4,Mattapan
+16,3,2018,2,4,Dorchester
+17,4,2018,2,4,Roxbury
+23,5,2018,2,4,South Boston
+22,5,2018,2,4,Dorchester
+17,7,2018,2,4,Hyde Park
+18,3,2018,2,4,Roxbury
+18,3,2018,2,4,Roxbury
+13,2,2018,2,4,Roxbury
+2,7,2018,2,4,Roxbury
+14,6,2018,2,4,Roxbury
+0,1,2018,2,4,Dorchester
+16,4,2018,2,5,Downtown
+21,6,2018,2,5,Jamaica Plain
+21,6,2018,2,5,Jamaica Plain
+5,6,2018,2,5,Roxbury
+2,7,2018,2,5,Roxbury
+0,7,2018,2,5,Roxbury
+16,4,2018,2,5,Roxbury
+10,3,2018,2,5,Mattapan
+22,2,2018,2,5,Dorchester
+1,7,2018,2,5,Dorchester
+21,5,2018,2,5,Dorchester
+21,5,2018,2,5,Dorchester
+8,2,2018,2,5,Dorchester
+23,6,2018,2,6,East Boston
+3,7,2017,4,12,Dorchester
+18,3,2018,2,6,Dorchester
+22,3,2018,2,6,Dorchester
+22,1,2018,2,6,Dorchester
+0,7,2018,2,6,Dorchester
+0,7,2018,2,6,Roxbury
+0,7,2018,2,6,Roxbury
+0,7,2018,2,6,Roxbury
+0,7,2018,2,6,Roxbury
+23,7,2018,2,6,Dorchester
+23,6,2018,2,6,Mattapan
+13,6,2018,2,6,Dorchester
+22,3,2018,2,6,Hyde Park
+2,7,2018,2,6,Dorchester
+12,2,2018,2,6,Dorchester
+18,4,2018,2,6,Dorchester
+18,4,2018,2,6,Dorchester
+18,4,2018,2,6,Dorchester
+0,7,2018,2,6,Brighton
+0,7,2018,2,6,Brighton
+23,7,2018,2,6,Hyde Park
+0,7,2018,2,6,Dorchester
+0,7,2018,2,6,Dorchester
+0,4,2018,3,7,Roxbury
+23,3,2018,3,7,Roxbury
+21,4,2018,3,7,Roxbury
+18,4,2018,3,7,Dorchester
+18,4,2018,3,7,Dorchester
+18,4,2018,3,7,Dorchester
+18,4,2018,3,7,Dorchester
+23,6,2018,3,7,Dorchester
+15,7,2018,3,7,Roxbury
+23,7,2018,3,7,Roxbury
+13,3,2018,3,7,Roxbury
+21,2,2018,3,7,Dorchester
+16,2,2018,3,7,South End
+14,6,2018,3,7,Roxbury
+11,3,2018,3,7,Dorchester
+4,1,2018,3,7,Hyde Park
+4,1,2018,3,7,Hyde Park
+21,2,2018,3,7,Fenway
+22,4,2018,3,7,Dorchester
+22,4,2018,3,7,Dorchester
+2,3,2018,3,7,Dorchester
+21,2,2018,3,7,West Roxbury
+21,5,2018,3,8,Roxbury
+22,7,2018,3,8,Allston
+2,7,2018,3,8,Jamaica Plain
+23,1,2018,3,8,South Boston
+23,4,2018,3,8,Dorchester
+1,4,2018,3,8,Mattapan
+23,7,2018,3,8,Mattapan
+22,1,2018,3,8,Allston
+21,1,2018,3,8,Dorchester
+22,7,2018,3,8,Dorchester
+5,7,2018,3,8,Roxbury
+9,3,2018,3,8,Mattapan
+9,3,2018,3,8,Mattapan
+9,3,2018,3,8,Mattapan
+22,1,2018,3,8,Charlestown
+19,4,2018,3,8,Roxbury
+22,2,2018,3,8,Dorchester
+23,4,2018,3,8,Hyde Park
+5,7,2018,3,9,Dorchester
+23,2,2018,3,9,Jamaica Plain
+21,2,2018,3,9,Dorchester
+12,2,2018,3,9,Dorchester
+1,2,2018,3,9,Dorchester
+1,2,2018,3,9,Dorchester
+7,4,2018,3,9,Jamaica Plain
+20,7,2018,3,9,Dorchester
+20,7,2018,3,9,Dorchester
+3,1,2018,3,9,South End
+3,7,2018,3,9,Dorchester
+3,7,2018,3,9,Dorchester
+14,4,2018,3,9,Roxbury
+17,5,2018,3,9,Dorchester
+21,7,2018,3,9,Jamaica Plain
+6,2,2018,3,9,Roxbury
+13,1,2018,3,9,South End
+21,6,2018,3,9,Dorchester
+19,7,2018,3,9,Dorchester
+20,5,2018,3,9,Dorchester
+20,4,2018,3,9,Dorchester
+14,4,2018,3,9,Jamaica Plain
+8,4,2018,4,10,Roxbury
+4,4,2018,4,10,South Boston
+12,4,2018,4,10,Roxbury
+3,6,2018,4,10,Roxbury
+17,6,2018,4,10,Mission Hill
+18,6,2018,4,10,Dorchester
+18,6,2018,4,10,Dorchester
+21,6,2018,4,10,Roslindale
+23,7,2018,4,10,Dorchester
+2,1,2018,4,10,Mattapan
+11,1,2018,4,10,Mattapan
+23,4,2018,4,10,Dorchester
+2,5,2018,4,10,Dorchester
+21,6,2018,4,10,Dorchester
+15,1,2018,4,10,Dorchester
+22,7,2018,4,10,Jamaica Plain
+3,7,2018,4,10,Roxbury
+21,2,2018,4,10,Dorchester
+1,6,2018,4,10,East Boston
+21,6,2018,4,10,Dorchester
+20,7,2018,4,10,Dorchester
+8,7,2018,4,10,Dorchester
+17,5,2018,4,10,Roxbury
+1,7,2018,4,10,Downtown
+2,2,2018,4,10,Downtown
+3,3,2018,4,10,Chinatown
+19,2,2018,4,11,Mattapan
+10,5,2018,4,11,Dorchester
+0,3,2018,4,11,Dorchester
+5,5,2018,4,11,Dorchester
+1,1,2018,4,11,Mattapan
+17,2,2018,4,11,Jamaica Plain
+21,2,2018,4,11,Roxbury
+1,5,2018,4,11,Jamaica Plain
+21,2,2018,4,11,Roxbury
+21,2,2018,4,11,Roxbury
+1,7,2018,4,11,Roxbury
+23,3,2018,4,11,Roxbury
+2,3,2018,3,9,East Boston
+22,7,2018,4,12,Jamaica Plain
+19,6,2018,4,11,Dorchester
+3,7,2018,3,9,Dorchester
+19,3,2018,4,10,Hyde Park
+23,5,2018,4,10,Roslindale
+22,2,2018,4,12,Mattapan
+14,6,2018,4,12,Dorchester
+0,6,2018,4,12,Roxbury
+19,1,2018,4,12,Roxbury
+20,6,2018,4,12,South Boston
+0,7,2018,4,12,Roxbury
+0,5,2018,4,12,Mattapan
+0,5,2018,4,12,Mattapan
+0,5,2018,4,12,Mattapan
+3,1,2018,4,12,Roxbury
+14,2,2018,4,12,Dorchester
+3,3,2019,1,1,Dorchester
+4,3,2019,1,1,Roxbury
+23,1,2019,1,1,Dorchester
+16,3,2019,1,1,Roxbury
+14,4,2019,1,1,Roxbury
+19,6,2019,1,1,Dorchester
+23,6,2019,1,1,Mattapan
+15,6,2019,1,1,Jamaica Plain
+15,6,2019,1,1,Jamaica Plain
+23,7,2019,1,1,Roxbury
+14,7,2019,1,1,Hyde Park
+18,4,2019,1,1,Roxbury
+17,7,2019,1,1,Dorchester
+20,3,2019,1,1,Roxbury
+1,7,2019,1,2,Dorchester
+9,1,2019,1,2,Mattapan
+12,2,2019,1,2,Roxbury
+18,3,2019,1,2,Mattapan
+13,4,2019,1,2,Roxbury
+21,5,2019,1,2,East Boston
+0,7,2019,1,2,Dorchester
+19,7,2019,1,2,Dorchester
+2,6,2019,1,2,Roxbury
+2,7,2019,1,3,Dorchester
+0,2,2019,1,3,Dorchester
+15,3,2019,1,3,Mission Hill
+17,5,2019,1,3,Dorchester
+12,5,2019,1,3,Roxbury
+19,1,2019,1,3,Roxbury
+16,1,2019,1,3,Dorchester
+11,5,2019,1,3,Dorchester
+3,1,2019,1,3,Roslindale
+2,1,2019,1,3,Roxbury
+2,6,2019,2,4,Roxbury
+19,5,2019,2,4,Jamaica Plain
+16,7,2019,2,4,Mattapan
+16,7,2019,2,4,Mattapan
+16,7,2019,2,4,Mattapan
+18,1,2019,2,4,Dorchester
+23,7,2019,2,4,Hyde Park
+19,1,2019,2,4,Charlestown
+23,7,2019,2,4,Mattapan
+23,7,2019,2,4,Mattapan
+18,4,2019,2,5,Dorchester
+18,4,2019,2,5,Dorchester
+18,4,2019,2,5,Dorchester
+18,4,2019,2,5,Dorchester
+17,2,2019,2,5,Mattapan
+21,5,2019,2,5,Dorchester
+21,5,2019,2,5,Dorchester
+10,4,2019,2,5,Dorchester
+19,7,2019,2,5,Roxbury
+21,4,2019,2,5,Roxbury
+12,1,2019,2,5,West End
+1,1,2019,2,5,Charlestown
+21,3,2019,2,5,East Boston
+21,3,2019,2,5,East Boston
+20,4,2019,2,5,Dorchester
+2,7,2019,2,5,Roxbury
+0,2,2019,2,5,Dorchester
+14,7,2019,2,6,Dorchester
+0,1,2019,2,6,Dorchester
+0,1,2019,2,6,Dorchester
+16,7,2019,2,6,Roxbury
+10,3,2019,2,6,Back Bay
+17,5,2019,2,6,Dorchester
+3,1,2019,2,6,Roxbury
+3,1,2019,2,6,Roxbury
+10,3,2019,2,6,Jamaica Plain
+13,3,2019,2,6,Mattapan
+3,6,2019,2,6,Dorchester
+1,1,2019,2,6,Dorchester
+2,1,2019,2,6,Mattapan
+21,2,2019,2,6,Jamaica Plain
+21,2,2019,2,6,Jamaica Plain
+19,4,2019,2,6,South Boston
+21,1,2019,2,6,Roxbury
+22,7,2019,2,6,South Boston
+21,1,2019,2,6,Dorchester
+21,1,2019,2,6,Dorchester
+22,1,2019,2,6,Dorchester
+15,1,2019,2,6,Mattapan
+15,1,2019,2,6,Mattapan
+20,3,2019,2,6,Dorchester
+1,7,2019,2,6,Roxbury
+2,7,2019,2,6,Dorchester
+0,1,2019,2,6,Dorchester
+23,4,2019,3,7,Roslindale
+3,6,2019,3,7,Dorchester
+3,6,2019,3,7,Roxbury
+2,6,2019,3,7,Roxbury
+23,5,2019,3,7,South End
+23,5,2019,3,7,Hyde Park
+22,5,2019,3,7,Roxbury
+22,5,2019,3,7,Roxbury
+16,1,2019,3,7,Dorchester
+2,1,2019,3,7,Mattapan
+1,1,2019,3,7,Dorchester
+23,6,2019,3,7,Roxbury
+23,6,2019,3,7,Roxbury
+23,6,2019,3,7,Roxbury
+23,6,2019,3,7,Roxbury
+23,6,2019,3,7,Roxbury
+23,6,2019,3,7,Roxbury
+0,3,2019,3,7,Mattapan
+17,1,2019,3,7,Roxbury
+17,1,2019,3,7,Roxbury
+23,1,2019,3,7,Dorchester
+0,4,2019,3,7,Roxbury
+15,4,2019,3,7,Roslindale
+23,6,2019,3,7,Dorchester
+21,7,2019,3,7,Roxbury
+23,6,2019,3,7,Dorchester
+14,2,2019,3,7,Roxbury
+2,6,2019,3,7,Roxbury
+23,1,2019,3,7,Dorchester
+23,1,2019,3,7,Dorchester
+20,4,2019,3,7,Jamaica Plain
+20,4,2019,3,7,Jamaica Plain
+0,5,2019,3,8,Dorchester
+0,5,2019,3,8,Dorchester
+13,1,2019,3,8,Mattapan
+9,1,2019,3,8,Dorchester
+0,1,2019,3,8,Roxbury
+20,2,2019,3,8,Roxbury
+4,3,2019,3,8,Dorchester
+4,3,2019,3,8,Dorchester
+21,4,2019,3,8,Dorchester
+21,4,2019,3,8,Dorchester
+1,3,2019,3,8,Dorchester
+0,1,2019,3,8,Roxbury
+3,7,2019,3,8,Roslindale
+0,7,2019,3,8,Mission Hill
+23,2,2019,3,8,Jamaica Plain
+16,6,2019,3,8,Roxbury
+6,7,2019,3,8,Dorchester
+22,7,2019,3,8,Roxbury
+23,6,2019,3,8,Dorchester
+4,7,2019,3,8,Dorchester
+8,7,2019,3,8,Dorchester
+14,1,2019,3,8,Roxbury
+1,1,2019,3,8,Mattapan
+22,1,2019,3,8,Mattapan
+0,4,2019,3,8,Roxbury
+1,6,2019,3,8,Mission Hill
+23,5,2019,3,8,Jamaica Plain
+23,5,2019,3,8,Jamaica Plain
+18,5,2019,3,8,Mattapan
+2,1,2019,3,9,Back Bay
+4,7,2019,3,9,Dorchester
+2,1,2019,3,9,Back Bay
+20,4,2019,3,9,West Roxbury
+2,1,2019,3,9,Dorchester
+23,2,2019,3,9,Dorchester
+22,3,2019,3,9,Dorchester
+17,5,2019,3,9,Dorchester
+21,6,2019,3,9,South Boston
+2,5,2019,3,9,Roxbury
+23,4,2019,3,9,Dorchester
+21,1,2019,4,10,Dorchester
+21,2,2019,4,10,Roxbury
+3,2,2019,4,10,Roxbury
+2,1,2019,4,10,Mattapan
+22,7,2019,4,10,South Boston
+22,1,2019,4,10,Mattapan
+23,4,2019,4,10,Mattapan
+3,7,2019,4,10,Roxbury
+3,7,2019,4,10,Roxbury
+3,7,2019,4,10,Roxbury
+22,5,2019,4,10,Dorchester
+0,6,2019,4,11,Roxbury
+14,5,2019,4,10,Roslindale
+14,5,2019,4,10,Roslindale
+22,6,2019,4,11,Roslindale
+11,6,2019,4,11,Dorchester
+23,2,2019,4,11,Hyde Park
+20,7,2019,4,11,Dorchester
+18,3,2019,4,11,South Boston
+21,4,2019,4,11,Roxbury
+2,7,2019,4,11,West End
+17,3,2019,4,11,Mission Hill
+16,4,2019,4,11,Mattapan
+23,7,2019,4,11,South End
+15,5,2019,4,12,Dorchester
+15,3,2019,4,12,Dorchester
+15,3,2019,4,12,Dorchester
+22,6,2019,4,12,Brighton
+18,1,2019,4,12,Dorchester
+18,1,2019,4,12,Dorchester
+21,5,2019,4,12,Dorchester
+20,7,2020,1,1,Dorchester
+20,7,2020,1,1,Dorchester
+23,7,2020,1,1,Mattapan
+23,4,2019,4,10,Hyde Park
+13,4,2020,1,1,Roslindale
+18,1,2020,1,1,Dorchester
+19,4,2020,1,1,Dorchester
+7,1,2020,1,1,Mattapan
+17,5,2020,1,1,Dorchester
+17,5,2020,1,1,Dorchester
+19,3,2020,1,2,Mattapan
+18,4,2020,1,2,Dorchester
+18,6,2020,1,2,Dorchester
+3,1,2020,1,2,Dorchester
+21,1,2020,1,2,Mattapan
+2,7,2020,1,2,Roxbury
+23,5,2020,1,2,Dorchester
+19,6,2020,1,2,Hyde Park
+19,2,2020,1,2,Mattapan
+2,3,2020,1,2,Hyde Park
+21,4,2020,1,2,Roxbury
+23,1,2020,1,3,Roxbury
+21,3,2020,1,3,Dorchester
+17,7,2020,1,3,Roxbury
+2,5,2020,1,3,Jamaica Plain
+19,6,2020,1,3,Dorchester
+2,7,2020,1,3,Jamaica Plain
+18,1,2020,1,3,Dorchester
+17,3,2020,1,3,Dorchester
+19,4,2020,1,3,Hyde Park
+14,7,2020,1,3,Dorchester
+22,4,2020,2,4,Roxbury
+17,5,2020,2,4,Mattapan
+16,3,2020,2,4,Beacon Hill
+19,1,2020,2,4,Roxbury
+19,1,2020,2,4,Roxbury
+22,6,2020,2,4,Dorchester
+20,3,2020,2,4,Dorchester
+15,4,2020,2,4,Dorchester
+20,4,2020,2,4,Jamaica Plain
+21,1,2020,2,4,Mission Hill
+21,1,2020,2,4,Mission Hill
+17,7,2020,2,4,Roxbury
+19,7,2020,2,4,Jamaica Plain
+10,6,2020,2,4,Roxbury
+2,5,2020,2,4,Roxbury
+20,4,2020,2,4,Dorchester
+13,5,2020,2,4,Hyde Park
+23,6,2020,2,4,Hyde Park
+21,2,2020,2,4,Roxbury
+17,5,2020,2,4,Roxbury
+22,1,2020,2,5,Roxbury
+22,1,2020,2,5,Roxbury
+22,1,2020,2,5,Roxbury
+20,1,2020,2,5,Mattapan
+15,1,2020,2,5,Roxbury
+0,1,2020,2,5,Dorchester
+12,7,2020,2,5,Dorchester
+22,4,2020,2,5,South Boston
+3,6,2020,2,5,Mission Hill
+19,7,2020,2,5,Dorchester
+12,2,2020,2,5,Dorchester
+21,5,2020,2,5,Jamaica Plain
+21,5,2020,2,5,Jamaica Plain
+21,1,2020,2,5,Dorchester
+21,1,2020,2,5,Dorchester
+1,7,2020,2,5,Roxbury
+23,4,2020,2,5,Dorchester
+10,4,2023,1,3,Dorchester
+8,3,2023,1,3,Dorchester
+21,6,2023,1,3,Dorchester
+22,7,2023,2,4,Jamaica Plain
+20,1,2023,2,4,Mattapan
+14,5,2023,2,4,South Boston
+2,6,2023,2,4,Roxbury
+2,6,2023,2,4,Roxbury
+21,7,2023,2,4,Dorchester
+21,7,2023,2,4,Hyde Park
+21,7,2023,2,4,Hyde Park
+22,4,2023,2,4,Dorchester
+9,5,2023,2,4,Roxbury
+20,2,2023,2,5,Roxbury
+16,5,2023,2,5,Dorchester
+16,5,2023,2,5,Dorchester
+21,1,2023,2,5,Downtown
+20,1,2023,2,5,Mattapan
+20,1,2023,2,5,Mattapan
+20,1,2023,2,5,Dorchester
+21,1,2023,2,5,Downtown
+0,4,2023,2,5,Dorchester
+0,4,2023,2,5,Dorchester
+3,7,2023,2,5,South Boston
+21,7,2023,2,5,Dorchester
+16,2,2023,2,5,Dorchester
+4,1,2023,2,5,Dorchester
+21,6,2023,2,6,Roxbury
+20,3,2023,2,6,Dorchester
+22,4,2023,2,6,Dorchester
+5,2,2023,2,6,Dorchester
+19,7,2023,2,6,Dorchester
+21,6,2023,2,6,Dorchester
+20,3,2023,2,6,Dorchester
+20,5,2023,2,6,Dorchester
+0,7,2023,3,7,Mission Hill
+12,7,2023,3,7,Mission Hill
+22,3,2023,3,7,Roslindale
+22,3,2023,3,7,Dorchester
+2,4,2023,3,7,Mattapan
+2,4,2023,3,7,Mattapan
+2,4,2023,3,7,Mattapan
+2,4,2023,3,7,Mattapan
+2,4,2023,3,7,Mattapan
+23,5,2023,3,7,Dorchester
+14,5,2023,3,7,Mattapan
+21,5,2023,3,7,Roxbury
+5,1,2023,3,7,Mattapan
+1,3,2023,3,7,Jamaica Plain
+22,5,2023,3,7,South Boston
+23,6,2023,3,7,Jamaica Plain
+22,1,2023,3,7,Roxbury
+22,1,2023,3,7,Roxbury
+12,3,2023,3,7,Fenway
+14,4,2023,4,12,Dorchester
+19,1,2023,3,7,Roxbury
+23,1,2023,3,7,Roxbury
+23,1,2023,3,7,Dorchester
+21,2,2023,3,7,Jamaica Plain
+21,2,2023,3,7,Jamaica Plain
+21,3,2023,3,8,Jamaica Plain
+12,6,2023,3,8,Dorchester
+21,6,2023,3,8,Jamaica Plain
+21,6,2023,3,8,Jamaica Plain
+20,7,2023,3,8,Dorchester
+21,7,2023,3,8,Roxbury
+20,1,2023,3,8,Roxbury
+21,1,2023,3,8,Roslindale
+1,3,2023,3,8,Roxbury
+21,3,2023,3,8,Dorchester
+7,7,2023,3,8,Dorchester
+7,7,2023,3,8,Dorchester
+7,7,2023,3,8,Dorchester
+7,7,2023,3,8,Dorchester
+7,7,2023,3,8,Dorchester
+7,7,2023,3,8,Dorchester
+7,7,2023,3,8,Dorchester
+20,7,2023,3,8,Dorchester
+7,7,2023,3,8,Dorchester
+16,2,2023,3,8,Roxbury
+21,3,2023,3,8,Mission Hill
+16,5,2023,3,8,Roxbury
+23,7,2023,3,9,Dorchester
+0,2,2023,3,9,Mattapan
+0,2,2023,3,9,Mattapan
+5,7,2023,3,9,Dorchester
+5,7,2023,3,9,Dorchester
+20,1,2023,3,9,Dorchester
+20,1,2023,3,9,Dorchester
+20,1,2023,3,9,Dorchester
+20,1,2023,3,9,Dorchester
+20,1,2023,3,9,Dorchester
+21,3,2023,3,9,Roxbury
+22,6,2023,3,9,Hyde Park
+17,2,2023,4,10,Mattapan
+14,6,2023,4,10,Dorchester
+0,7,2023,4,10,Mattapan
+9,2,2023,4,10,Jamaica Plain
+1,1,2023,4,11,South Boston
+18,4,2023,4,11,Roxbury
+20,6,2023,4,11,Roxbury
+19,6,2023,4,11,Roxbury
+23,7,2023,4,11,Hyde Park
+21,5,2023,4,11,Roxbury
+22,6,2023,4,11,Hyde Park
+2,7,2023,4,11,Allston
+2,7,2023,4,11,Allston
+3,2,2023,4,12,Roxbury
+20,1,2023,4,12,Dorchester
+16,7,2023,4,12,Roxbury
+21,1,2023,4,12,Dorchester
+14,4,2023,4,12,Dorchester
+20,1,2023,4,12,Dorchester
+0,7,2023,4,12,Dorchester
+20,2,2024,1,1,Dorchester
+5,2,2024,1,1,Dorchester
+0,2,2024,1,1,South Boston Waterfront
+23,2,2024,1,1,Dorchester
+16,6,2024,1,1,West Roxbury
+22,6,2024,1,1,Roxbury
+0,7,2024,4,10,Roxbury
+19,4,2024,1,2,Dorchester
+10,4,2024,1,3,Roxbury
+12,2,2024,1,2,Downtown
+21,6,2024,1,3,Roxbury
+21,2,2024,1,3,Dorchester
+21,1,2024,1,3,Dorchester
+19,1,2024,1,3,Roxbury
+20,5,2024,2,4,South Boston
+15,7,2024,2,4,Roxbury
+17,1,2024,2,4,Dorchester
+23,2,2024,2,4,South End
+23,2,2024,2,4,South End
+4,7,2024,2,4,Mattapan
+15,5,2024,2,5,Dorchester
+14,1,2024,2,5,North End
+21,4,2024,2,5,Dorchester
+21,4,2024,2,5,Dorchester
+23,7,2024,2,5,Roxbury
+23,7,2024,2,5,Roxbury
+17,4,2024,2,5,Hyde Park
+4,7,2024,2,5,Roxbury
+0,4,2024,2,5,South Boston
+0,4,2024,2,5,South Boston
+19,3,2024,2,5,South End
+23,6,2024,2,5,Dorchester
+22,3,2024,2,6,Dorchester
+22,3,2024,2,6,Dorchester
+23,4,2024,2,6,Roxbury
+1,5,2024,2,6,Mattapan
+1,1,2024,2,6,Jamaica Plain
+10,2,2024,2,6,Beacon Hill
+20,5,2024,2,6,Dorchester
+0,5,2024,2,6,Longwood
+11,5,2024,2,6,South Boston Waterfront
+23,5,2024,2,6,Roxbury
+23,7,2024,2,6,South End
+22,3,2024,2,6,Allston
+20,7,2024,2,6,Dorchester
+21,1,2024,2,6,South Boston
+21,1,2024,2,6,Jamaica Plain
+15,2,2024,3,7,Dorchester
+1,3,2024,3,7,Roxbury
+1,3,2024,3,7,Roxbury
+22,3,2024,3,7,Roxbury
+15,4,2024,3,7,Charlestown
+12,6,2024,3,7,Mattapan
+12,6,2024,3,7,Mattapan
+1,6,2024,3,7,Jamaica Plain
+1,6,2024,3,7,Jamaica Plain
+1,6,2024,3,7,Jamaica Plain
+5,6,2024,3,7,Dorchester
+1,6,2024,3,7,Roxbury
+0,3,2024,3,7,Roxbury
+21,4,2024,3,7,Dorchester
+1,6,2024,3,7,Roxbury
+21,4,2024,3,7,Dorchester
+21,4,2024,3,7,Dorchester
+21,4,2024,3,7,Dorchester
+21,4,2024,3,7,Dorchester
+20,5,2024,2,6,Dorchester
+20,6,2024,2,6,Dorchester
+23,7,2024,3,7,Roxbury
+23,7,2024,3,7,Roxbury
+23,7,2024,3,7,Roxbury
+22,1,2024,3,7,Jamaica Plain
+0,2,2024,3,7,Dorchester
+22,3,2024,3,7,Dorchester
+1,1,2024,3,7,Roxbury
+22,7,2024,3,7,Dorchester
+14,4,2024,3,7,Dorchester
+2,5,2024,3,7,Downtown
+2,5,2024,3,7,Downtown
+23,2,2024,3,7,Dorchester
+14,2,2024,3,7,Jamaica Plain
+8,4,2024,3,7,Dorchester
+11,3,2024,3,8,Roxbury
+19,5,2024,3,8,East Boston
+21,7,2024,3,8,Dorchester
+18,2,2024,3,8,Dorchester
+18,2,2024,3,8,Dorchester
+0,6,2024,3,8,Mattapan
+2,7,2024,3,8,Dorchester
+20,1,2024,3,8,Roxbury
+21,1,2024,3,8,Roxbury
+20,1,2024,3,8,Roxbury
+20,1,2024,3,8,Roxbury
+20,1,2024,3,8,Roxbury
+21,7,2024,3,8,Dorchester
+21,6,2024,3,8,Dorchester
+3,4,2024,3,9,Roxbury
+12,2,2024,3,9,Dorchester
+12,2,2024,3,9,Dorchester
+21,2,2024,3,9,South End
+23,2,2024,3,9,Dorchester
+11,2,2024,3,9,Dorchester
+21,2,2024,3,9,Jamaica Plain
+2,5,2024,3,9,West End
+20,7,2024,3,9,Roxbury
+1,1,2024,3,9,Mattapan
+11,6,2024,3,9,Dorchester
+13,1,2024,4,10,Mattapan
+19,1,2024,4,10,Dorchester
+1,3,2024,4,10,Roxbury
+0,5,2024,4,10,Dorchester
+21,5,2024,4,10,Mission Hill
+1,1,2024,4,10,Dorchester
+1,1,2024,4,10,Dorchester
+16,3,2024,4,10,Charlestown
+20,3,2024,4,11,Dorchester
+13,6,2024,4,11,Hyde Park
+14,3,2024,4,11,Dorchester
+1,5,2024,4,11,Mattapan
+0,1,2024,4,11,Roxbury
+11,6,2024,4,11,Allston
+20,6,2024,4,11,Dorchester
+10,2,2024,4,12,Roxbury
+10,2,2024,4,12,Roxbury
+20,3,2024,4,12,South Boston
+23,6,2024,4,12,Roslindale
+22,2,2024,4,12,Dorchester
+23,5,2024,4,12,Charlestown
+0,2,2024,4,12,Dorchester
+23,6,2024,4,12,Mattapan
+18,4,2025,1,1,East Boston
+22,7,2025,1,1,Charlestown
+1,7,2025,1,1,Hyde Park
+21,3,2025,1,1,Jamaica Plain
+19,3,2025,1,1,Dorchester
+22,1,2025,1,1,Dorchester
+23,4,2025,1,1,Mattapan
+22,5,2025,1,1,Dorchester
+1,1,2025,1,2,Dorchester
+21,7,2025,1,2,Dorchester
+23,3,2025,1,2,Mattapan
+17,5,2025,1,2,Dorchester
